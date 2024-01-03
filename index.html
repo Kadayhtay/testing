@@ -1,50 +1,398 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>LOGIN</title>
-</head>
-<style>
-    h1,
-    label,
-    a,
-    ::placeholder {
-        color: dodgerblue;
-    }
-
-    form {
-        display: block;
-        width: 400px;
-        border: 2x solid gold;
-        margin: 100px auto;
-        padding: 20px 20px;
-        background-color: aquamarine;
-    }
-
-    input {
-        width: 90%;
-        color: black;
-        border: 1px solid gold;
-        background-color: whitesmoke;
-        padding: 10px 10px;
-        margin: 15px 0;
-    }
+<title>Home</title>
+<meta charest="utf-8">
+<link rel="stylesheet" type="text/css" href="nav.css">
+<style type="text/css">
+#outerbox{width:1340px;
+	overflow:hidden;
+	background-color: #fff;
+	position: static;
+	margin-left: 5px;}
+#sliderbox{position:relative;
+	width:5360px;opacity: .9;
+	animation-name:Jamal;
+	animation-duration:25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;}
+#sliderbox img{float:left;}
+@keyframes Jamal{
+	0%{left:0px;}
+	13.67%{left:0px;}
+	16.67%{left:-1340px;}
+	30.33%{left:-1340px;}
+	33.33%{left:-2680px;}
+	47%{left:-2680px;}
+	50%{left:-4020px;}
+	63.67%{left:-4020px;}
+	66.67%{left:-2680px;}
+	80.33%{left:-2680px;}
+	83.33%{left:-1340px;}
+	97%{left:-1340px;}
+	100%{left:0px;}
+}
+.third h1{font-family: georgia;}
+h2{font-family: Georgia;}
+h3, .mm a, .email{font-family: arial;}
+header{font-size: 23px;
+	text-align: center;
+	padding-top: 30px;
+	line-height: 60px;
+	color: #fff;
+	font-family: Impact;}
+header h1{letter-spacing: 4px;
+	text-shadow: -4px -5px 1px #fff;color: #006650;
+	word-spacing: 10px;
+	}
+.head center{position: relative;
+	top: -500px;
+	color: #fff;}
+.head center img{margin-top: -30px;}
+.head center p{margin-top: -20px;
+	font-family: arial;
+	color: #006650;
+	}
+.sspace{width: 100%;
+	height: 30px;
+	margin-top: -500px;
+	background-color: #006650;}
+.welcome{background-color: #fff;
+	padding-bottom: 10px;
+	padding-top: 10px;}
+.wel table{margin: 50px;}
+.wel table td{width: 350px;
+	border: 2px solid #006650;
+	color: #006650;
+	border-radius: 4px;
+	padding: 25px;}
+.wel p span{float: left;
+	font-size: 33px;}
+.wel table td h2{font-weight: bold;
+	border-bottom: 1px dotted #006650;}
+.didi img{padding-left: 80px;}
+.didi hr{color: #006650;}
+.vivi{float: right;
+	padding: 50px;
+	margin-top: 50px;
+	font-family: Garamond;}
+.vivi table{border-collapse: collapse;
+	margin-top: 40px;
+	width: 350px;
+	height: 290px; 
+	color: #006650;}
+.vivi table td{border-top: 2px solid #006650;
+	border-bottom: 2px solid #006650;
+	padding-left: 20px;
+	}
+.vivi table tr:nth-of-type(odd){background-color: #dff;}
+.name ul li{text-align: left;
+	padding-left: 10px;
+	display: inline;}
+.name ul li:before{content:'\2744';
+          color:#006650;}
+.lolo span{padding-top: -50px;}
+.third{background-color: #006650;
+	padding: 50px;
+	color: #fff; }
+.third span{text-shadow: 3px 3px 3px #000;}
+.third span:before{content:'\26C4';}
+.third span:after{content:'\26C4';}
+.third h3{text-shadow:3px 2px 2px #000;}
+.third p{text-indent: 30px;
+	padding-right: 20px;
+	padding-left: 20px;}
+.downt{border: 2px solid #fff;
+	width: 100%;
+	height: 150px;
+	border-radius: 5px;
+	padding: 10px; }
+.downt img{margin: 15px;
+	border: 2px ridge #dff;
+	box-shadow: 2px 1px 2px #000;}
+.downt a{color: #006650;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	padding: 3px 8px;
+	box-shadow: 1px 2px 1px #000;
+	float: right;
+	position: relative;
+	bottom: 10px;
+	right: 10px;
+	transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.downt a:hover{background-color: #006650;
+	color: #dff;
+	border:1px solid #fff;
+	text-decoration: underline;}
+.downt a:focus{background-color: #dff;}
+.forth{background-color: #fff;
+	padding: 50px;
+	color: #006650;}
+.forth video{margin: 20px;
+	border-radius: 5px;
+	border: 6px double #006650;}
+.forth img{margin: 20px;
+	border: 3px ridge #006650;}
+footer{background-color: #006650;
+	color: #fff;
+	height: 350px;font-family: arial;
+	padding: 50px 50px 30px 50px;}
+footer h3{font-family: arial;}
+.contact{width: 100%;}
+.member{float: left;
+	width: 40%;}
+.member h3{text-indent: 30px;
+	text-shadow: 3px 3px 3px #000;}
+.member a{color: #006650;
+	background-color: #fff;
+	margin-left: 20px;
+	padding: 3px;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #000;
+	transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.member a:hover{background-color: #006650;
+	color: #dff;
+	border:1px solid #fff;
+	text-decoration: underline;}
+.member a:focus{background-color: #dff;}
+.member ol li{line-height: 28px;
+	list-style: none;}
+.email a{color: #fff;
+	text-decoration: none;}
+.email{line-height: 30px;
+	padding-top: 50px;
+	float: left;
+	width: 30%;}
+.email h3{text-shadow: 3px 3px 3px #000;}
+.email img{
+	transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.social img:hover{width: 50px;
+	height: 50px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #000;}
+.inin{text-align: right;
+	padding-right: 90px;}
+.inin img{margin-top: 30px;
+	border: 1px double #dff;
+	box-shadow:2px 2px 2px #000;}
+.inin #fir{padding: 0px 60px;
+	background-color: #fff;}
+.inin img:hover{opacity: .85;}
+p{text-align: justify;
+	text-justify:inter-word;}
 </style>
-
+</head>
 <body>
-    <form>
-        <h1>Login Form</h1>
-        <label>Username</label>
-        <input type="text" placeholder="Enter your name">
-        <br>
-        <label>Password</label>
-        <input type="password" placeholder="Enter your password">
-        <br>
-        <button>LOGIN</button>
-        <br>
-        <label>Don't have an account?</label>
-        <a herf="#">Sign Up</a>
-    </form>
+	<div class="nnav">
+		<ul>
+			<li><img src="home/home-5-xxl.png" width="18" height="18"><a style="font-weight:bold;" data-text="Home" href="index.html">Home</a></li>
+			<li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+			<li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+			<li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+			<li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+			<li><img src="home/20180723_234740.png" width="20" height="20"><a data-text="General" href="general.html">General</a></li>
+			<li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+			<li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+			<li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+			<li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+		</ul>
+	</div>
+	<div class="mm">
+		<div class="head">
+			<div id="outerbox">
+				<div id="sliderbox">
+					<img src="home/iStock_000054564796XLarge.jpg" width="1340" height="500">
+					<img src="hotel1/aureum-pyin-oo-lwin-photo-03_1.jpg" width="1340" height="500">
+					<img src="home/purcell-tower-town-pyin-oo-lwin-myanmar-aug.jpg" width="1340" height="500">
+					<img src="home/20180815_164513.jpg" width="1340" height="500">
+				</div>
+			</div>
+			<center>
+				<header><h1>The Ultimate Guide For Pyin Oo Lwin<br><span>&#10052;&nbsp;&nbsp; (MayMyo) &nbsp;&nbsp;&#10052;</span></h1></header>
+					<img src="home/Man_Traveling_with_Luggage_GIF_Animation_Loop.gif" width="250" height="300"><br>
+						<p style="text-align:center;">&#10077; Traveling allows you to become so many Different versions of yourself &#10078;</p>
+			</center>
+		</div>
+		<div class="sspace"></div>	
+		<div class="welcome">
+			<div class="vivi">
+				<img src="home/pyin-oo-lwin.gif" width="350" height="630">
+				<table>
+					<tr>
+						<td>Coordinates:</td><td>22&deg;2&apos;4.38&quot;N 96&deg;27&apos;31.49&quot;E</td>
+					</tr>
+					<tr>
+						<td>Country</td>
+						<td><img src="home/20180717_213451.png" width="25" height="20">Myanmar</td>
+					</tr>
+					<tr>
+						<td>Region</td>
+						<td><img src="home/1280px-Flag_of_Mandalay_Division.svg.png" width="25" height="20">Mandalay Region</td>
+					</tr>
+					<tr>
+						<td>District</td>
+						<td>Pyin Oo Lwin District</td>
+					</tr>
+					<tr>
+						<td>Population(2014)</td>
+						<td>255,000</td>
+					</tr>
+					<tr>
+						<td>Time zone</td>
+						<td>MMT(UTC+6:30)</td>
+					</tr>
+				</table>
+			</div>
+			<div class="wel">
+				<table>
+					<tr>
+						<td>
+							<h2>Welcome</h2>
+							<p><span>W</span>elcome to Pyin Oo Lwin, formerly known as Maymyo - a picturesque small town in the Shan Highlands of central Myanmar.It is well known for its colonial style houses with large compound and pine trees, eucalytus and sliver-oak abound in town. Delightfully cool and plesent the whole year round.This town is more than just a pretty face: it began as an output of the British military during its occupation of the country, and eventually grew into a prmanent post, as well as the summer capital of British Burma due to its temperate climate from its high elevation. Today, Pyin Oo Lwin has a strong Anglo legacy, with one of the largest Anglo-Burmese population int he country. Despite the fact that the militry government of Burma renamed the town Pyin Oo Lwin from the British Maymyo, there remains much evidence of British occupation and rule, from old colonial homes to the chimes of the town's clock tower aliggning with those of Big Ben in London, England. Visitors can expert to be charmed by the sensual nature surroundings, which include an abundance of vibrant flowers and strawberries, as well as aromatic coffee beans. Together with a comfortable climate and relaxed vibe, as well as plenty of attracions and activities, Pyin Oo Lwin makes a pleasant stop on any visit to Myanmar.</p>
+						</td>
+						<td>
+							<h2>History</h2>
+							<p><span>T</span>he town began as a military outpost established near a small Shan village with two dozen households [2] situated on the Lashio-Mandalay trail between Nawnghkio and Mandalay. In 1896, a permanent military post was established in the town and later, because of its climate, it became a hill stationand the summer capital of British Burma. The establishment in Burma (civil, commercial and military) would move to Maymyo during the hot season to escape from the high heat and humidity of Rangoon. During British rule and through the 1970s, Maymyo had a large Anglo-Burmese population, but this steadily declined. During the Japanese occupation, as many Anglos were concentrated in and around Maymyo, the Japanese incarcerated many of them for fear of their loyalty to the British very close to Maymyo. Today though, Maymyo still has one of the larger hold over populations of Anglo-Burmese in the country. The British named the location Maymyo, literally May's Town in Burmese, after Colonel May, a veteran of the Indian Rebellion of 1857and commander of the Bengal Regimenttemporarily stationed at the location of the town in 1887.[2][3] The military government of Burma renamed the town Pyin U Lwin.</p>
+						</td>
+					</tr>
+					<br><br>
+					<tr>
+						<td class="name">
+							<h2>Names</h2>
+							<p style="text-indent: 3em;">As this town is popular, we have many ways to call for the name of the town. Here're some name:</p>
+							<ul>
+								<li> Pyin Oo Lwin</li><br>
+								<li> Maymyo</li><br>
+								<li> Taung Lay Khar (Hillside Stairs)</li><br>
+								<li> Taung Sa Kan (Hill Station)</li><br>
+								<li> Pan Myo Taw (City of flowers)</li><br>
+								
+							</ul>
+						</td>
+						<td class="lolo">
+							<h2>Location & Climate</h2>
+							<p style="text-indent: 4em;">Pyin Oo Lwin is loacted on the western bank of the riverAyeyarwadd, in the Shan Highland, approximately 42 miles east of Mandalay. It is a popular hill station about 69km away from Mandalay. And about 1070 meters (3150 ft) about sea-level. Cooler, relatively speaking, than the plains and the temperature rarely goes over 30 C in summer. Winter tempwratures often fall below 10 C at night, so be prepared.</p>
+						</td> 
+					</tr>
+				</table>
+			</div>
+			<p style="padding:50px; margin-top:-30px;"><iframe style="border:2px solid #dff;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59174.51448242566!2d96.43967865790674!3d22.034015391225413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cc9e9c4e50f127%3A0xe9303d2a683f438f!2z4YCV4YC84YCE4YC64YCm4YC44YCc4YC94YCE4YC64oCM!5e0!3m2!1smy!2smm!4v1530661483129" width="1220" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></p>
+		</div>
+		<div class="third">
+			<center><h1>------------------------------------ <span> Topical Things </span> ------------------------------------</h1></center>
+			<br><br>
+			<div class="downt" style="border-bottom:none;">
+				<img src="home/pyin-oo-lwin-myanmar-october.jpg" width="200" height="130" style="float:left">
+				<h3>Downtown, Purcell Tower</h3>
+				<p>One of the main attractions in the center of the town is Purcell Tower, which house one of the few clocks made by Gillette and Jhonson Co.of England in 1934, in celebration of King George V's Sliver Jubilee(one of the other clocks is in Cape Town, South Africa, given at the same time). The chimes of the clock align with those of Big Ben in London, England, yet another connection with this town's British history.</p>
+			</div>
+			<div class="downt" style="border-bottom:none;">
+				<img src="home/1F3fIV4ng2MdRvzSBO0NLMQ.jpeg" width="200" height="130" style="float:right">
+				<h3>Take a Horse-Cart</h3>
+				<p>Wander around Pyin Oo Lwin town center for a little while and you'll notice a rather bizarre sight: horses hitched up to old-fashioned carriages painted in ninid pinks, greens, purples and reds. Adding to thebizarre time-travel sense of the town, this is an experience not to be missed.</p>
+			</div>
+			<div class="downt" style="border-bottom:none;">
+				<img src="home/P6221208_webready-1024x768.jpg" width="200" height="130" style="float:left">
+				<h3>Anisakan Waterfall (Dattaw Gyaik waterfall)</h3>
+				<p>In the country just outside of Pyin Oo Lwin, the 120-metre-tall Anisakan Waterfall makes a super day trip from town. The journey by road from Pyin Oo Lwin to the waterfall car park takes around 20-30 minutes, then it's a furhter 40-minute walk down steep jungle paths to the waterfall itself. Why not rent a bicycle in town and hesd out under your own steam?</p>
+				<a href="waterfalls-dattaw gyaik waterfall.html">To Page &#10148;</a>
+			</div>
+			<div class="downt" style="border-bottom:none;">
+				<img src="home/pyo.jpg" width="200" height="130" style="float:right">
+				<h3>National Kandawgyi Gardens</h3>
+				<p>Pyin Oo Lwin's botanical gardens, the National Kandawgyi Gardens, were established by the British Forest Offer Alex Roger in 1915. Modelled after London's famous Kew Gardens, the garden contains 514 species of indigenous tree and 74 foreign species, as well as 300 tpes of orchid and 25 different roses.</p>
+				<a href="garden-kandawgyinationalgarden.html">To Page &#10148;</a>
+			</div>
+			<div class="downt">
+				<img src="home/Maha-Ant-Htoo-Kan-Thar-Pagoda-Pyin-Oo-Lwin-Myanmar.jpg" width="200" height="130" style="float:left">
+				<h3>Maha Ant Htoo Kan Thar Pagoda</h3>
+				<p>The building of this Pagoda has a history of its own. The reason was that three marble Buddha Images sculpted in Mandalay were being transport totheir planned destination in China. On this journey, one of the Buddha statues fell down from the truck and could not be reloaded due to its weight. After many attempts, this Image was left behind and the other two were taken on their way.</p>
+				<a href="pagodas_mahar ant htoo kan tar.html">To Page &#10148;</a>
+			</div>
+		</div>
+		<div class="forth">
+			<center>
+				<p style="text-align:center;">Sources: <a href="www.youtube.com">www.youtube.com</a></p><br>
+				<video controls="controls" width="320" height="180" poster="home/Screenshot_20180718-200609.png">
+					<source src="home/Pyin_Oo_Lwin___City_of_Flowers.mp4" type="video/mp4">
+					<source src="home/Pyin_Oo_Lwin___City_of_Flowers.ogv" type="video/ogg">
+				</video>
+				<video controls="controls" width="320" height="180" poster="home/Screenshot_20180718-200447.png">
+					<source src="home/FB_VIDEO_HD_1530895559435.mp4" type="video/mp4">
+					<source src="home/FB_VIDEO_HD_1530895559435.mp4" type="video/mp4">
+				</video>
+				<video controls="controls" width="320" height="180" poster="home/20180718_201432.png">
+					<source src="home/Beautiful_Pyin_Oo_Lwin.mp4" type="video/mp4"> 
+					<source src="home/Beautiful_Pyin_Oo_Lwin.mp4" type="video/mp4">
+				</video><br>
+				<video controls="controls" width="320" height="180" poster="home/Screenshot_20180812-230917.png">
+					<source src="home/FB_VIDEO_HD_1534091323210.mp4" type="video/mp4">
+					<source src="home/FB_VIDEO_HD_1534091323210.ogv" type="video/ogg">
+				</video>
+				<video controls="controls" width="320" height="180" poster="home/Screenshot_20180812-231639.png">
+					<source src="home/FB_VIDEO_HD_1534091295234.mp4" type="video/mp4">
+					<source src="home/FB_VIDEO_HD_1534091295234.mp4" type="video/mp4">
+				</video>
+				<video controls="controls" width="320" height="180" poster="home/Screenshot_20180812-230027.png">
+					<source src="home/FB_VIDEO_HD_1534091269260.mp4" type="video/mp4"> 
+					<source src="home/FB_VIDEO_HD_1534091269260.mp4" type="video/mp4">
+				</video><br>
+			</center>
+		</div>
+		<footer>
+			<div class="contact">
+				<div class="member">
+					<h3>&#9733; &star; Member List &star; &#9733;</h3>
+					<ol>	
+						<li>&#10102;. Mg Minn Thant Tin </li>
+						<li>&#10103;. Mg Ye Win Htet </li>
+						<li>&#10104;. Ma Shweyi Lin Lat </li>
+						<li>&#10105;. Mg Pyae Zin Phyo </li>
+						<li>&#10106;. Ma Win Chan Thar Bo</li>
+						<li>&#10107;. Ma Theint Nay Chi Hlaing</li>
+						<li>&#10108;. Mg Zaw Win Htet</li>
+						<li>&#10109;. Mg Har Kee</li>
+					</ol>
+					<a href="about us.html">More About</a>
+					<a href="about us.html#here">Contact Here</a>
+				</div>
+				<div class="email">
+					<img src="home/20180719_120727.png" width="30" height="30">
+					<a href="">yewinhtet04@gmail.com</a><br>
+					<img src="home/20180719_121454.png" width="25" height="25">
+					(+95) 978448996<br>
+					<img src="home/1532182178859.png" width="25" height="25">
+					UTYCC, Mandalay-Lashio Road,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mandalay Region, Myanmar<br>
+					<h3>Community </h3>
+						<div class="social">
+							<a href=""><img src="home/facebook+logo+png+transparent+background.png" width="40" height="40"></a>
+							<a href=""><img src="home/instagram-Logo-PNG-Transparent-Background-download.png" width="40" height="40"></a>
+							<a href=""><img src="home/twitter-logo.png" width="38" height="38"></a>
+							<a href=""><img src="home/1532182638185.png" width="43" height="43"></a>
+						</div>
+				</div>
+				<div class="inin">
+					<img id="fir" src="home/FB_IMG_1483373206711.jpg" width="120" height="120"><br>
+					<img src="home/travel_v5.gif" width="240" height="120">
+				</div>
+			</div>
+			<br>
+			<div>
+				<hr style="color:#fff;">
+			<center style="font-family:Times New Roman;"><i><small>Copyright &copy; UTYCC 2018. All Rights Reserved</small></i></center>
+			</div>
+		</footer>
+	</div>
+	<div class="dog">
+		<h1>HOME</h1>
+	</div>
 </body>
-
 </html>

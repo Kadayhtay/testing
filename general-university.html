@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Universities</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background-color: #dff;}
+hr.style2 {
+  border-top: 3px double #006650;
+}
+hr.style10 {
+  border-top: 1px dotted #006650;
+  border-bottom: 1px dotted #006650;
+}
+.mm {font-family: arial;
+background-color: #fff;}
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 6px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 150px;
+  position: relative;
+  top: 0px;
+  left: -160px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  right: 94px;
+  top: 80px;
+  color: #006650;
+  letter-spacing: 1px;}
+  .hosp1{
+    margin-left: 450px;
+  }
+  .hosp1 img{
+    float: left;
+    margin-top: 50px;
+    padding-bottom: 20px;
+  }
+  .hosp1 h1{
+    margin-left:110px;
+    padding-top: 70px;
+      font-size: 3.5em;
+      text-decoration: underline;
+      font-family: Impact;
+      color: #006650;
+      text-shadow: 6px 6px 6px #fff;
+  }
+.urbannav table{
+  border-collapse: collapse;
+  width:60%;
+  background-color: #006650;
+}
+.urbannav table tr,.urbannav table td{
+  width: 50%;
+  height: 30px;
+}
+.urbannav th a{
+  color:#fff;
+  text-decoration: none;
+}
+.urbannav th{
+  width: 25%;
+}
+.arrow{
+  background-color: #006650;
+}
+.dsa1 img{
+  width: 140px;
+  height: 100px;
+  border:2px solid #006650;
+  margin-left: 350px;
+  float: left;
+  margin-right: 10px;
+}
+.dsa1 h1{
+  font-size: 2.5em;
+  font-family: Arial;
+  color:#006650;
+  padding-left: 30px;
+  padding-top: 15px;
+  text-decoration: underline;
+  text-shadow: 4px 4px 4px #808080;
+}
+.dsa2 img{
+  height: 350px;
+  width: 1100px;
+  border: 2px solid #006650;
+  border-radius: 15px;
+  margin-left: 120px;
+  margin-top: 50px;
+}
+.dsa2 h3{text-align: justify;
+  text-justify:inter-word;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-indent: 100px;
+  color: #006650;
+}
+.dsa3 table{
+  width: 80%;
+}
+.dsa3 figure img{
+  height: 200px;
+  width: 300px;
+  border: 3px solid #006650;
+  border-radius: 5px;
+}
+.hosptab h1{
+  margin-right: 30px;
+  font-size: 2em;
+}
+.hosptab table{
+  margin-right: 50px;
+  width:45%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 4px 4px 4px #808080;
+}
+.hosptab table tr{
+  width:33.33%;
+  height: 40px;
+  border:3px solid #006650;
+  font-weight: bold;
+}
+.hosptab table td{
+  width:33.33%;
+  height: 40px;
+  border:3px solid #006650;
+  font-weight: bold;
+}
+.hosptab table th h2{
+  padding-left: -150px;
+}
+.hosptab table tr th img{
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 190px;
+  margin-right: -190px;
+  border:0;
+}
+.alignright{
+  text-align: left;
+}
+.btab23 img{
+  width: 30px;
+  height: 30px;
+  border:0;
+  margin-top: -5px;
+  padding-right: 10px;
+  float: left;
+   margin-left: 100px;
+}
+.btab23 p{
+  margin-top: 25px;
+  font-weight: bold;
+  color:#006650;
+}
+.altrow{
+  background-color: #dff;
+}
+.dsa4{
+  border:3px solid #006650;
+  border-radius: 10px;
+  width:45%;
+  margin-left: 40px;
+  box-shadow: 4px 4px 4px #808080;
+}
+.dsa4 h1{
+  font-size: 2em;
+  text-decoration: underline;
+  color:#006650;
+  font-family: Arial;
+}
+.dsa4 h4{
+  text-indent: 70px;
+  color:#006650;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+hr.style5 {
+  background-color: #fff;
+  border-top: 2px dashed #8c8b8b;
+}
+hr.style14 { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #006650, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #006650, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #006650, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #006650, #f0f0f0); 
+}
+hr.style8 {
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+}
+hr.style8:after {
+  content: '';
+  display: block;
+  margin-top: 2px;
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #fff;
+}
+section{
+  padding-top: 30px;
+}
+footer{background-color: #006650;
+  height: 70px;}
+footer img{
+  margin:5px 35px;}
+</style>
+<link rel="stylesheet" type="text/css" href="css/main2.css">
+</head>
+<body>
+  <div class="nnav">
+    <ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a style="font-weight:bold;" data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+    </ul>
+  </div>
+  <div class="mm"> 
+    <div class="cat">
+      <span><h3>General Links</h3></span>
+      <ul>
+        <li onclick="myFunction()"><h1>&#9776;</h1>
+          <ul>
+            <li><a href="general-banks.html">Banks</a></li>
+            <li><a href="general-hospitals.html">Hospitals</a></li>
+            <li><a style="font-weight:bold;text-decoration:underline;" href="general-university.html">University</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> 
+    <div class="hosp1">
+      <img src="general/unilogo1.png" height="100" width="100"><h1>Universities</h1>
+    </div>
+    <div class="urbannav">
+      <center>
+        <table>
+          <tr>
+            <th><a href="#dsa"</a>DSA</th>
+            <th style="border-left: 3px solid #fff;"><a href="#dsta">DSTA</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#ycc">UTYCC</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#zpg">CICS</a></th>
+          </tr>
+        </table>
+      </center>
+    </div><hr class="style10" style="margin-top: 30px;">
+    <section id="dsa"><div class="dsa1">
+      <img src="general/dsalogo.png">
+      <h1>Defence Services Academy</h1>
+    </div><br>
+      <div class="dsa2">
+        <img src="general/dsa1.jpg"><br>
+        <h3>The Defence Services Academy  is the premier military service academy of Myanmar, training future officers for all three branches of Myanmar military. The Ministry of Defence administered academy offers bachelor's degree programs in liberal arts, combined physical sciences, and computer science. The academy is open only to male applicants.The DSA graduates are commissioned in one of the three branches of Myanmar military. </h3>
+        <hr class="style14"><br>
+        <div class="hosptab">
+      <table style="float:right;">
+        <tr class="altrow">
+          <th colspan="3"><img style="background-color:#006650;" src="general/20180825_221621.png" width="40" height="30"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&bull;Burmese</td>
+          <td>&bull;English</td>
+          <td>&bull;Mathematics</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Applied Mathematics</td>
+          <td>&bull;Chemistry</td>
+          <td>&bull;Nuclear Chemistry</td>
+        </tr>
+        <tr>
+          <td>&bull;Physics</td>
+          <td>&bull;Nuclear Physics</td>
+          <td>&bull;Electronics</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Geography</td>
+          <td>&bull;History</td>
+          <td>&bull;Economics</td>
+        </tr>
+        <tr>
+          <td>&bull;Computer Science</td>
+          <td>&bull;Computer Technology</td>
+          <td>&bull;Research</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Geology</td>
+          <td>&bull;Psychology</td>
+          <td>&bull;International Relations</td>
+        </tr>
+      </table>
+     <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Location- Mdy-Lashio Rd,Near KyaukTaung Pagoda, Pyin Oo Lwin</p>
+                <img src="general/rector.png" style="margin-top: 5px;"><p>Rector&nbsp;&nbsp;- Brigadier General Thant Zin Ohn </p>
+                <img src="general/student.png" style="margin-top: 5px;"><p>Student&nbsp;- 5000</p>
+              </div>
+      <br>
+      <div class="dsa4">
+        <center><h1>History</h1></center>
+        <h4>The DSA was established in Fort Ba Htoo in southern Shan State in 1954, and was moved to its current home, a former British hill station of Pyin Oo Lwin (formerly, Maymyo) in June 1957. The first commander of DSA was Col. Thiri Pyanchi Kyaw Soe.</h4>
+      </div><br clear="both">
+     </div>
+      </div>
+      <hr class="style14"><br>
+      <div class="dsa3">
+        <center>
+          <table>
+            <tr>
+              <td><figure><img src="general/dsa2.jpg"></figure></td>
+              <td><figure><img src="general/dsa3.jpg"></figure></td>
+              <td><figure><img src="general/dsa4.jpg"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </section><hr class="style8">
+    <section id="dsta"><div class="dsa1">
+      <img src="general/dstalogo.jpg" style="margin-left: 200px;">
+      <h1>Defence Services Technological Academy</h1>
+    </div><br>
+      <div class="dsa2">
+        <img src="general/dsta.jpg"><br>
+        <h3>The Defence Services Technological Academy (DSTA) is the premier technological university of the Myanmar Armed Forces. One of the most selective universities in the country, the academy offers various Bachelor of Engineering degrees to male cadets only. Upon graduation, most DSTA cadets are commissioned as Engineering Officers with the rank of Lieutenant in one of the three branches of Burmese armed forces--army, navy, and air force. Some qualified cadets may choose (or be chosen) to pursue further education in Yangon Technological University, Mandalay Technological University or abroad.</h3>
+        <hr class="style14"><br>
+        <div class="hosptab">
+      <table style="float:right;">
+        <tr class="altrow">
+          <th colspan="3"><img style="background-color:#006650;" src="general/20180825_221621.png" width="40" height="30"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&bull;Burmese</td>
+          <td>&bull;English</td>
+          <td>&bull;Mathematics</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Applied Mathematics</td>
+          <td>&bull;Chemistry</td>
+          <td>&bull;Nuclear Chemistry</td>
+        </tr>
+        <tr>
+          <td>&bull;Physics</td>
+          <td>&bull;Nuclear Physics</td>
+          <td>&bull;Electronics</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Geography</td>
+          <td>&bull;History</td>
+          <td>&bull;Research</td>
+        </tr>
+        <tr>
+          <td>&bull;Computer Science</td>
+          <td>&bull;Computer Technology</td>
+          <td>&bull;International Relations</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Mechatronics</td>
+          <td>&bull;Mechanical Engineering</td>
+          <td>&bull;Electrical Engineering</td>
+        </tr>
+      </table>
+     <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Location- Mdy-Lashio Rd,Near PyiChit Pagoda, Pyin Oo Lwin</p>
+                <img src="general/rector.png" style="margin-top: 5px;"><p>Rector&nbsp;&nbsp;-   Col Myo Thein Kyaw </p>
+                <img src="general/student.png" style="margin-top: 5px;"><p>Student&nbsp;- 1800</p>
+              </div>
+      <br>
+      <div class="dsa4">
+        <center><h1>History</h1></center>
+        <h4>The Defence Services Technological Academy was established in 1993 following the 1988 nationwide uprising. The military went on to establish a parallel system of colleges and universities for itself, including DSTA. Lt. Col. Win Myint was assigned to carry out this duty. </h4>
+      </div><br clear="both">
+     </div>
+      </div><br>
+      <div class="dsa3">
+        <center>
+          <table>
+            <tr>
+              <td><figure><img src="general/dsta2.jpg"></figure></td>
+              <td><figure><img src="general/dsta3.jpg"></figure></td>
+              <td><figure><img src="general/dsta4.png"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </section><hr class="style8">
+    <section id="ycc"><div class="dsa1" style="margin-top:50px;">
+      <img src="general/ycclogo.png" style="margin-left: 130px; margin-top: -30px; height: 140px; border: 0;">
+      <h1 style="margin-top: 10px;">University of Technology (Yatanarpon Cyber City)</h1>
+    </div><br>
+      <div class="dsa2">
+        <img src="general/ycc.jpg"><br>
+        <h3>University of Technology (Yatanarpon Cyber City) namely UTYCC is a speedy developing learning community that has been recognized as one of the most Myanmar’s technological institutions of higher education. Although it is founded in 2010, UTYCC becomes very well-known both locally and globally within a short period of time. As UTYCC intends to foster best knowledge and bright future with the high level of innovation, many talented students are interested in it and enroll every year. The sports and recreation activities throughout the academic year are also one main attraction for the new students.</h3>
+        <hr class="style14"><br>
+        <div class="hosptab">
+      <table style="float:right; margin-top: 200px;">
+        <tr class="altrow">
+          <th colspan="3"><img style="background-color:#006650;" src="general/20180825_221621.png" width="40" height="30"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&bull;Myanmar</td>
+          <td>&bull;English</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Engineering Mathematics</td>
+          <td>&bull;Engineering physics</td>
+        </tr>
+        <tr>
+          <td>&bull;Engineering Chemistry</td>
+          <td>&bull;Advanced Material Engineering</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Information Science</td>
+          <td>&bull;Computer Engineering</td>
+        </tr>
+        <tr>
+          <td>&bull;Electronics Engineering</td>
+          <td>&bull;Precision Engineering</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;QMS</td>
+          <td>&bull;IR</td>
+        </tr>
+      </table>
+     <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Location- Mdy-Lashio Rd, 28 Milestone, Pyin Sar Village, Pyin Oo Lwin</p>
+                <img src="general/rector.png" style="margin-top: 5px;"><p>Rector&nbsp;&nbsp;-   Dr. Aung Win </p>
+                <img src="general/student.png" style="margin-top: 5px;"><p>Student&nbsp;- About 2500</p>
+                <img src="general/blueweb.png" style="margin-top: 5px;"><p>Website&nbsp;- <a href="https://www.utycc.edu.mm/" style="color:#006650;">https://www.utycc.edu.mm/</a></p>
+              </div>
+      <br>
+      <div class="dsa4">
+        <center><h1>About others</h1></center>
+        <h4>As an international collaboration program, UTYCC is a member institute of ASEAN Cyber University Project. E-learning center was established with the assistance of Korea International Cooperation Agency (KOICA) in July 2012. Since then, online contents are being developed every academic year. Moreover, there is Double Master Degree Program with University of Miyazaki, Japan. In order to achieve the work readiness skills of the students, the university provides internship programs for the students with the link of industry partners and collaborates with Mekong Skills to work USAID Project.</h4>
+      </div><br clear="both">
+     </div>
+      </div><br>
+      <div class="dsa3">
+        <center>
+          <table>
+            <tr>
+              <td><figure><img src="general/utycc.jpg"></figure></td>
+              <td><figure><img src="general/ycc2.jpg"></figure></td>
+              <td><figure><img src="general/ycc3.jpg"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </section><hr class="style8">
+    <section id="zpg"><div class="dsa1">
+      <img src="general/zpglogo.jpg" style="margin-left: 130px;">
+      <h1>Central Institute of Civil Service (Upper Myanmar) </h1>
+    </div><br>
+      <div class="dsa2">
+        <img src="general/zpg.jpg"><br>
+        <h3>Pyin-Oo-Lwin District, Pyin-Oo-Lwin Township, near the village of Zebingyi, Pebin field (98) Acres and vacant and virgin Land (963) Acres, total (1061) Acres are named to Institute Land to use open Central Institute of Civil Service (Upper Myanmar). According to the instructions of the President Office and Union Government Office, our institute has been opening and training to improve all the Government Staff’s quality. On 9 March 2016, the notification No.677/2016 relinquishment land (155.90) Acres changed for State Land and remain Land (905. 10) Acres for Institute Land. Central Institute of Civil Service (Upper Myanmar) is situated in Zebingyi village, Pyin-Oo-Lwin District, Mandalay Region. It is located on Mandalay-Pyin-Oo-Lwin Road and 24 miles 5 Furlongs far from Mandalay.</h3>
+        <hr class="style14"><br>
+        <div class="hosptab">
+      <table style="float:right; margin-top: 190px;">
+        <tr class="altrow">
+          <th colspan="3"><img style="background-color:#006650;" src="general/20180825_221621.png" width="40" height="30"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&bull;Management studies</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Economic Studies</td>
+        </tr>
+        <tr>
+          <td>&bull;Political & Social Science</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Law</td>
+        </tr>
+        <tr>
+          <td>&bull;Information & Communication Technology</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;English</td>
+        </tr>
+      </table>
+     <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Location- Mdy-Lashio Rd, 25th milestone, Zee Pin Gyi Village, Pyin Oo Lwin</p>
+                <img src="general/rector.png" style="margin-top: 5px;"><p>Rector&nbsp;&nbsp;-   U Nyi Nyi San </p>
+                <img src="general/blueweb.png" style="margin-top: 5px;"><p>Website&nbsp;- <a href="http://www.ucsb.gov.mm/en/?page_id=426" style="color:#006650;">http://www.ucsb.gov.mm/</a></p>
+              </div>
+      <br>
+      <div class="dsa4">
+        <center><h1>History</h1></center>
+        <h4>To be a Developed Nation, the citizens of the whole country including border areas’ all round sectors needs to be harmonious improvement. According to the instructions of the Head of State, Mandalay needs to be a Developed Region for Standards Hospitals, Vocational Institutes and Administrative Department like Yangon. The Central Institute of Civil Service (Upper Myanmar) was opened for the Civil Service personnel over 1 million to organize as a brilliant national force as given guidance by the Head of State. It was inaugurated at 7 February 1999. The Special Refresher Course for Basic Education Teachers training No. (1) was the first training of Central Institute of Civil Service (Upper Myanmar) </h4>
+      </div><br clear="both">
+     </div>
+      </div><br>
+      <div class="dsa3">
+        <center>
+          <table>
+            <tr>
+              <td><figure><img src="general/zpg1.jpg"></figure></td>
+              <td><figure><img src="general/zpg2.jpg"></figure></td>
+              <td><figure><img src="general/zeepingyi.jpg"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div>
+    </section>
+   <hr class="style2">
+   <br><br><br>
+   <footer>
+      <a href="general-hospitals.html"><img src="general/20180813_164852.png" width="60" height="60" ></a>
+   </footer>
+  </div>
+  <div class="dog">
+    <h1>GENERAL</h1>
+  </div>
+</body>
+</html>

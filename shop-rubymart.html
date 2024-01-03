@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Ruby Mart</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<style>
+body{background-color: #fff;
+ font-family: arial;}
+
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 4px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 190px;
+  position: relative;
+  top: 0px;
+  left: -200px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  right: 95px;
+  top: 78px;
+  font-size: .9em;
+  color: #006650;
+  font-family: arial;}
+h2{color:white;
+  font-size: 1.6em;}
+.cccc{color: #006650;
+  text-align: center;
+  font-family: arial;
+     font-size: 1.9em;}
+.nav1 a {
+       margin-left: 170px;
+       }
+.tddd{margin-left: 100px;}
+.ti table{margin-left: 50px;
+  border-spacing: 50px;}
+.ti table td{width: 530px;
+  border: 2px solid #006650;
+  color: #006650;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1.4em;}
+ .eal{margin-left: 610px;}
+.eal table td{width: 500px;
+  border: 2px solid #006650;
+  color: #006650;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1.4em;}
+
+.colo{background-color: #006650;
+      padding-left:5px;
+      text-align: center;
+     border-radius: 4px;
+     width:400px;
+    margin-left: 500px;}
+ h3{ color:#006650;
+     font-size: 1.6em;}
+ .hhh{margin-left: 500px;
+      text-decoration:underline;
+      color:#006650;  }
+.angle{margin-left: 100px;
+       float: left;
+       border: 2px solid #006650;
+      width: 500px;
+       height: 400px;
+      color:#006650;}
+.jjj{margin-left: 250px;}
+.images{margin-left: 100px;
+        float: left;}
+.brr{margin-left: 30px;}
+.child{margin-left: 240px;}
+.rr td{border: 1px solid #006650; 
+       color:#006650; 
+       font-size: 1.4em;
+      margin-left: 80px;}
+.rrer td{border: 1px solid #006650; 
+       color:#006650; 
+       font-size: 1.4em;}
+ .rrer{margin-left: 40px;}
+.imm{margin-left: 40px;
+     float: left;}
+.iim{float: left;
+     margin-left: 167px;}
+.eee{margin-left: 90px;
+     float: left;}
+.eee td{
+   border: 1px solid #006650; 
+   padding: 48.3px;
+   font-family: Arial,sans-serif;
+   color: #006650; 
+}
+.time {margin-left: 940px;}
+.time td{
+   border: 1px solid #006650; 
+   padding: 50px;
+   font-family: Arial,sans-serif;
+   color: #006650;
+}
+ caption{font-weight: bold;
+        font-size: 1.2em;
+        padding-bottom: 0.5em;
+        color:#006650;
+         border:1px solid;
+        }
+.gg{margin-left: 200px;}
+.lin{margin-left: 370px;}
+.clock{float: left;}
+.atm{margin-left: 200px;
+     float: left;}
+ .di{margin-left: 220px;
+     color:#006650; }
+ .hhr{margin-left: 350px;
+     color:#006650; }
+.cos{ border-radius: 5px;
+      background-color: #006650;
+      margin-left: 340px;
+     width: 460px;
+    text-align: center;}
+.arrow{float:right; 
+       margin-right:35px;}
+.container{width:1800px;
+           margin: auto;
+           background:#fff;
+          overflow: auto;
+          margin-left: 6px;
+          margin-top: 25px;
+         margin-bottom: 25px;}
+.gallery{
+          margin:10px; 
+          border:1px solid #006650;
+           float: left;
+           width: 290px;}
+.gallery img{margin-left: 10px;
+             margin-bottom: 3px;
+            margin-top: 5px;}
+.desc{ padding: 10px;
+      text-align: center;
+      font-size: 1.2em;
+      color:#006650;
+      font-weight: bold;}
+.lit{ padding: 5px;
+      text-align: center;
+      color:#006650;}
+.borrr{border: 3px solid #006650;
+      margin-left: 60px;
+      height: 1200px;
+      width: 1250px;}
+.hee h3{text-decoration: underline;
+     color:#006650;
+     text-align: center;
+     font-size: 1.3em; }
+.mail{margin-left: 36px;
+       color:#006650;
+       font-size: 1.3em;
+       float: left; }
+.location{margin-left: 720px;
+          color:#006650;
+          font-size: 1.4em;}
+.break{text-align: center;
+          color:#006650;
+          font-size: 2em;
+          font-weight: bold;}
+.gmail{margin-left: 600px;
+       color:#006650;
+      font-size: 1.6em;
+      float: left;}
+.colorr{background-color:#006650; }
+.left{ margin-left: 20px;}
+footer{background-color:#006650;
+  height: 70px;}
+footer img{
+  margin:5px 35px;}
+footer #sec{float: right;}
+.cat span h3{font-size: 1.5em;}
+.last p{line-height: 5px;font-size: .9em;
+  padding-left: 100px;
+  padding-right: 200px;}
+.last span{float: right;}
+</style>
+</head>
+
+<body>
+	<div class="nnav">
+		<ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a style="font-weight:bold;" data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+		</ul>
+	</div>
+
+<div class="mm"> 
+  <div class="cat">
+      <span><h3>Markets list</h3></span>
+      <ul>
+        <li><h1>&#9776;</h1>
+          <ul>
+            <li><a style="font-weight:bold;text-decoration:underline;"href="shop-rubymart.html">Ruby Mart</a></li>
+            <li><a href="shop-unimart.html">Unimart</a></li>
+            <li><a href="shop-pyin Oo Lwin market.html">Myoma Market</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div><br>
+<div class="cccc"><h1>Ruby Mart</h1><img src="markets/AF1QipNGOR5At_.jpg" width="100%" height="400"></div>
+
+<div class="ti">
+  <table>
+     <tr>
+       <td>
+         <p>RubyMart market is a self-service shop offering a wide variety of food and household products ,orgainixed into aisles.It is larger and has a wider selection .Ruby mart has many kinds of products.So we can buy the products that we need.</p>
+          &nbsp;&nbsp;<img style="background-color:#006650;" src="farms/20180825_143311.png" width="30" height="30"> Mandalay ,lashio road,MayMyo<br>
+           &nbsp;&nbsp;<img style="background-color:#006650;" src="farms/20180825_143232.png" width="30" height="30" style="padding-top: 5px;">Opening Time:
+           <div class="last">
+            <p>Saturday<span>9AM-9PM</span></p>
+            <p>Sunday<span>9AM-9PM</span></p>
+            <p>Monday<span>9AM-9PM</span></p>
+            <p>Tuesday<span>9AM-9PM</span></p>
+            <p>Wednesday<span>9AM-9PM</span></p>
+            <p>Thursday<span>9AM-9PM</span></p>
+            <p>Friday<span>9AM-9PM</span></p>
+           </div><br>
+
+        &nbsp;&nbsp;<img style="background-color:#006650;" src="farms/20180825_143206.png" width="30" height="30">&nbsp;&nbsp;<a href="https://www.facebook.com/rubymartpol/" style="text-decoration: underline; color: #006650;">https://www.facebook.com/rubymartpol/</a>
+      </td>
+      <td>
+           In First floor , 
+          <ul>
+            <li>Restaurant</li>
+            <li>Fashion Shop</li>
+            <li>Jewellery Shop</li>
+            <li>Lady Barber-shop</li>
+            <li>Fany gif shop</li>
+            <li>Mobile shop</li>
+            <li>Movie Plent Cinema</li>
+          </ul>
+         In ground floor,
+         <ul>
+          <li>food products</li>
+          <li>Child Pitches &amp; Child Accessory</li>
+          <li>'Essential' lady fashion shop</li>
+          <li>Book shop</li>
+          <li>ATM</li>
+        </ul>
+    </td>
+    </tr>
+  </table>
+</div>
+
+<br clear="both">
+
+
+<div class="colo"><h2>First Floor Super Market</h2></div>
+
+<div class="borrr">
+
+
+     <div class="gallery">
+        <img src="markets/ruby 83.jpg" width="270" height="300" >
+        <div class="desc">Clothes</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/ruby 15.jpg" width="270" height="300">
+        <div class="desc">Clothes</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/ruby 98.jpg" width="270" height="300">
+        <div class="desc">Clothes</div>
+      </div>
+
+       <div class="gallery">
+        <img src="markets/Ruby img4.png" width="270" height="300">
+        <div class="desc">Clothes</div>
+      </div>
+
+
+
+     <div class="gallery">
+        <img src="markets/shoe1.jpg" width="270" height="300" >
+        <div class="desc">Shoes</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/ruby 94.jpg" width="270" height="300">
+        <div class="desc">Shoes</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/bag1.jpg" width="270" height="300">
+        <div class="desc">Bags</div>
+      </div>
+
+       <div class="gallery">
+        <img src="markets/bag2.jpg" width="270" height="300">
+        <div class="desc">Bags</div>
+      </div>
+
+
+     <div class="gallery">
+        <img src="markets/ele3.jpg" width="270" height="300" >
+        <div class="desc">Electronic devices</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/ele2.jpg" width="270" height="300">
+        <div class="desc">Electronic devices</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/home7.jpg" width="270" height="300">
+        <div class="desc">Home Products</div>
+      </div>
+
+       <div class="gallery">
+        <img src="markets/home1.jpg" width="270" height="300">
+        <div class="desc">Home Products</div>
+      </div>
+
+
+</div><br clear="both">
+
+
+<div class="colo"><h2>Ground Floor Super Market</h2></div>
+
+<div class="borrr" style="height:2350px;">
+
+     <div class="gallery">
+        <img src="markets/m22.jpg" width="270" height="300" >
+        <div class="desc">Coffee Branch</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m20.jpg" width="270" height="300">
+        <div class="desc">Coffee Branch</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m18.jpg" width="270" height="300">
+        <div class="desc">Coffee Branch</div>
+      </div>
+
+       <div class="gallery">
+        <img src="markets/m17.jpg" width="270" height="300">
+        <div class="desc">Biscuit branch</div>
+      </div>
+
+
+     <div class="gallery">
+        <img src="markets/m28.jpg" width="270" height="300" >
+        <div class="desc">Noodle Branch</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m33.jpg" width="270" height="300">
+        <div class="desc">Noodle Branch</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m12.jpg" width="270" height="300">
+        <div class="desc">Oil Branch</div>
+      </div>
+
+       <div class="gallery">
+        <img src="markets/m11.jpg" width="270" height="300">
+        <div class="desc">Oil Branch</div>
+      </div>
+
+
+     <div class="gallery">
+        <img src="markets/m1.jpg" width="270" height="300" >
+        <div class="desc">Clothes</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m19.jpg" width="270" height="300">
+        <div class="desc">Clothes</div>
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m7.jpg" width="270" height="300">
+        <div class="desc">Toys</div>
+      </div>
+
+       <div class="gallery">
+        <img src="markets/m4.jpg" width="270" height="300">
+        <div class="desc">Toys</div>
+      </div>
+
+
+
+
+<div class="hee"><h3>Meal ,Vegetable &amp; Fruit</h3></div>
+
+     <div class="gallery">
+        <img src="markets/meal7.jpg" width="270" height="300" >
+      </div>
+
+     <div class="gallery">
+        <img src="markets/meal3.jpg" width="270" height="300">
+      </div>
+
+     <div class="gallery">
+        <img src="markets/meal2.jpg" width="270" height="300">
+      </div>
+
+       <div class="gallery">
+        <img src="markets/meal8.png" width="270" height="300">
+      </div>
+
+
+<div class="hee"><h3>Child Accessory</h3></div>
+
+     <div class="gallery">
+        <img src="markets/child.jpg" width="270" height="300" >
+      </div>
+
+     <div class="gallery">
+        <img src="markets/child3.jpg" width="270" height="300">
+      </div>
+
+     <div class="gallery">
+        <img src="markets/m9.jpg" width="270" height="300">
+      </div>
+
+       <div class="gallery">
+        <img src="markets/child2.jpg" width="270" height="300">
+      </div>
+
+
+<div class="hee"><h3>Child Pitches</h3></div>
+
+     <div class="gallery">
+        <img src="markets/child22.png" width="270" height="300" >
+      </div>
+
+     <div class="gallery">
+        <img src="markets/child23.jpg" width="270" height="300">
+      </div>
+
+     <div class="gallery">
+        <img src="markets/child5.jpg" width="270" height="300">
+      </div>
+
+       <div class="gallery">
+        <img src="markets/child24.jpg" width="270" height="300">
+      </div>
+
+
+</div><br clear="both">
+
+
+   <div class="colo"><h2>Restaurant in Ruby Mart</h2></div>
+
+<div class="borrr" style="height:670px;">
+   <br>
+   <div style="border-bottom: 2px solid #006650;">
+    <div class="break">Angle Bakery</div><br>
+    <div class="mail">Facebook-account:&nbsp;&nbsp; Angle Bakery(Rubymart)</div>
+    <div class="location">location:&nbsp;&nbsp;Beside the entrance of Ruby Mark</div><br>
+   </div><br>
+<div class="brr">
+   <table border="0">
+    <tr>
+    <td>
+        <table>
+    <tr>
+    <td><img src="markets/food14.jpg" width="390" height="220" ></td>
+    <td><img src="markets/food8.jpg" width="390" height="220" ></td>
+    <td><img src="markets/food11.png" width="390" height="220" ></td></div>
+        </tr>
+    <tr>
+    <td><img src="markets/food25.jpg" width="390" height="220" ></td>
+    <td><img src="markets/food13.png" width="390" height="220" ></td>
+    <td><img src="markets/food12.png" width="390" height="220" ></td>
+        </tr>
+    </table>
+  </td>
+</tr>
+</table></div>
+</div><br><br>
+
+  <div class="borrr" style="height:670px;">
+   <br>
+   <div style="border-bottom: 2px solid #006650;">
+    <div class="break">Food Court</div><br><br>
+    <div class="mail">Facebook-account:&nbsp;&nbsp;Food Court,Ruby Mart</div>
+    <div class="location">location:&nbsp;&nbsp; the entrance of Ruby Mart</div><br><br>
+  </div><br>
+
+   <div class="brr">
+   <table border="0">
+    <tr>
+    <td>
+        <table>
+    <tr>
+          <td><img src="markets/food court.jpg" width="390" height="220" ></td>
+          <td><img src="markets/food27.jpg" width="390" height="220" ></td>
+          <td><img src="markets/food28.jpg" width="390" height="220" ></td></div>
+    </tr>
+    <tr>
+          <td><img src="markets/food29.jpg" width="390" height="220" ></td>
+          <td><img src="markets/food30.jpg" width="390" height="220" ></td>
+          <td><img src="markets/food24.jpg" width="390" height="220" ></td>
+
+        </tr>
+    </table>
+  </td>
+</tr>
+</table></div>
+</div><br><br>
+
+
+<div class="borrr" style="height:670px;">
+   <br>
+   <div style="border-bottom: 2px solid #006650;">
+    <div class="break">Marybrown(Chicken Shop)</div><br><br>
+    <div class="mail">Facebook-account:&nbsp;&nbsp; Marrybrown, Pyin Oo Lwin</div>
+    <div class="location">location:&nbsp;&nbsp; the entrance of Ruby Mart</div><br>
+   </div><br>
+
+   <div class="brr">
+   <table border="0">
+    <tr>
+    <td>
+        <table>
+    <tr>
+          <td><img src="markets/food4.png" width="390" height="230" ></td>
+          <td><img src="markets/food17.jpg" width="390" height="230" ></td>
+          <td><img src="markets/food10.jpg" width="390" height="230" ></td></div>
+    </tr>
+    <tr>
+          <td><img src="markets/food9.jpg" width="390" height="220" ></td>
+          <td><img src="markets/food16.jpg" width="390" height="220" ></td>
+          <td><img src="markets/food15.jpg" width="390" height="220" ></td>
+
+        </tr>
+    </table>
+  </td>
+ </tr>
+ </table></div>
+</div><br>
+
+<div class="colo"><h2>3D Cinema</h2></div>
+
+<div class="borrr" style="height:500px;">
+   <br>
+   <div style="border-bottom: 2px solid #006650;">
+       <div class="break">Movie Planet</div><br><br>
+       <div class="mail">Facebook-account:&nbsp;&nbsp; 3D Movie Planet</div>
+       <div class="location">location:&nbsp;&nbsp; the center of Ruby Mart</div><br>
+    </div><br>
+
+      <div class="imm"><img src="markets/cinema.jpg" alt="" width="400px" height="270px"></div>
+        <div class="eee">
+           <table>
+              <caption>Prices</caption> 
+               <tr>
+                  <td>Single</td>
+                  <td>1500 &amp; 2000</td>
+               </tr>
+               <tr>
+                  <td>Couple</td>
+                  <td>6000</td>
+               </tr>
+           </table>
+      </div>
+
+     <div class="time"> 
+         <table>
+                <caption>Movie Time</caption>  
+                   <tr>
+                     <td>10:00AM<br><br>
+                         12:30PM<br><br>
+                         3:30PM<br><br>
+                         6:30PM<br>
+                     </td>
+                   </tr>
+         </table>
+     </div>
+   <br> 
+</div>
+
+<div class="colo"><h2>Other Shop in Ruby Mart</h2></div>
+<div class="left" style="margin-left:50px;">
+<div class="container">
+
+     <div class="gallery">
+      <div class="desc">little Things She Need Fashion </div>
+        <img src="markets/little1.jpg" width="275" height="300" >
+      </div>
+
+     <div class="gallery">
+      <div class="desc">little Things She Need Fashion </div>
+        <img src="markets/little2.jpg" width="275" height="300">
+      </div>
+
+     <div class="gallery">
+      <div class="desc">Honey Fancy Gif Shop </div>
+        <img src="markets/Ruby img6.png" width="275" height="300">
+      </div>
+
+       <div class="gallery">
+        <div class="desc">Cherry Mi(Bags shop)</div>
+        <img src="markets/ruby 57.jpg" width="275" height="300">
+      </div>
+
+</div>
+</div>
+
+<div class="colo"><h2>ATM  MACHINES</h2></div>
+<div class="left" style="margin-left:50px;">
+<div class="container">
+
+       <div class="gallery">
+        <div class="desc">All Banks</div>
+        <img src="markets/atm9.jpg" width="275" height="380">
+      </div>
+     <div class="gallery">
+      <div class="desc">AYA ATM</div>
+        <img src="markets/atm4.jpg" width="275" height="380" >
+      </div>
+
+     <div class="gallery">
+      <div class="desc">MYAWADDY ATM</div>
+        <img src="markets/atm7.jpg" width="275" height="380">
+      </div>
+
+     <div class="gallery">
+      <div class="desc">ABZ ATM</div>
+        <img src="markets/atm10.jpg" width="275" height="380">
+      </div>
+
+
+</div>
+</div>
+
+   <footer>
+      <a href="shop-unimart.html"><img id="sec" src="general/20180813_164917.png" width="60" height="60" ></a>
+      <a href="general-banks.html"></a>
+   </footer>
+</div>
+
+	<div class="dog">
+		<h1>SHOP</h1>
+	</div>
+
+</body>
+</html>

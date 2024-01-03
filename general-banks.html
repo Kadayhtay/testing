@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Banks</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<style>
+body{background-color: #dff;
+}
+
+.mm {font-family: arial;
+background-color: #fff;}
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 6px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 150px;
+  position: relative;
+  top: 0px;
+  left: -160px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  right: 94px;
+  top: 80px;
+  color: #006650;
+  letter-spacing: 1px;}
+  hr.style5 {
+  background-color: #fff;
+  border-top: 2px dashed #006650;
+}
+  .hosp1{
+    margin-left: 520px;
+  }
+  .hosp1 img{
+    float: left;
+    margin-top: 50px;
+    background-color: #006650;
+  }
+  .hosp1 h1{
+    margin-left:110px;
+    padding-top: 90px;
+      font-size: 3.5em;
+      text-decoration: underline;
+      font-family: Impact;
+      color: #006650;
+      text-shadow: 6px 6px 6px #fff;
+  }
+.urbannav table{
+  border-collapse: collapse;
+  width:60%;
+  background-color: #006650;
+}
+.urbannav table tr,.urbannav table td{
+  width: 50%;
+  height: 30px;
+}
+.urbannav th a{
+  color:#fff;
+  text-decoration: none;
+}
+.urbannav th{
+  width: 12.5%;
+}
+.arrow{
+  background-color: #006650;
+}
+hr.style2 {
+  border-top: 3px double #387605;
+}
+.bank2 table{
+  border-collapse: collapse;
+  width: 98%;
+  margin-left: 10px;
+}
+.bank2 table tr,.bank2 table td{
+  border:3px solid #006650;
+  width: 50%;
+}.btab1{
+  padding-top: 50px;
+}
+.btab1 img{
+  padding-top: 30px;
+  margin-left: 100px;
+  padding-right: 10px;
+}
+.btab1 h1{
+  text-decoration: underline;
+  margin-top: 50px;
+  color:#006650;
+  text-shadow: 3px 3px 3px #808080;
+  font-size: 2em;
+}
+.btab2 img{
+  height: 250px;
+  width: 300px;
+  border:2px ridge #006650;
+  margin-top: 70px;
+  border-radius: 15px;
+}
+.alignright{
+  padding-left: 20px;
+}
+.btab22 table tr th{
+  padding-bottom: 10px;
+  text-align: right;
+}
+.altrow{
+  background-color: #eaeaea;
+}
+.btab21 table tr td img{
+  width: 40px;
+  height: 35px;
+  margin-right: 50px;
+  border:0;
+  margin-top: 0;
+}
+.btab21 table{
+  width:50%;
+  margin-left: 10px;
+  border: 0;
+}
+.btab21 table tr{
+ 
+  height: 20px;
+  border:0;
+  font-weight: bold;
+  border-bottom: 3px solid #006650;
+}
+.btab21 table td{
+  width:10%;
+  border:0;
+  font-weight: bold;
+  border-bottom: 3px solid #006650;
+}
+.btab21 table td h4 a{
+  color:black;
+}
+.btab21 table td h4{
+  font-size: 0.8em;
+}
+.btab22 table tr td{
+  border-left: 3px solid #006650;
+}
+.btab22 table tr,.btab22 table td{
+  border:0;
+  width:33.33%;
+}
+.btab22 table tr td img{
+  margin-top: 0;
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  padding-right: 10px;
+  border:0;
+}
+.btab23 img{
+  width: 30px;
+  height: 30px;
+  border:0;
+  margin-top: -5px;
+  padding-right: 10px;
+  float: left;
+   margin-left: 100px;
+}
+.btab23 p{
+  margin-top: 25px;
+}
+
+.btab24 img{
+  margin-top: 10px;
+  margin-left: 250px;
+  border:2px ridge #006650;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 60px;
+}
+.btab244 table{
+  width:40%;
+  margin-left: 310px;
+}
+.btab244 table tr,.btab244 table td{
+  border:0;
+  width:60px;
+}
+.btab244 table tr td img{
+  margin-top: 10px;
+  margin-left: 20px;
+  border:2px ridge #006650;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 60px;
+}
+footer{background-color: #006650;
+  height: 70px;}
+footer img{float: right;
+  margin-right:35px;
+   margin-top: 5px;}
+</style>
+<link rel="stylesheet" type="text/css" href="css/main2.css">
+</head>
+<body>
+  <div class="nnav">
+    <ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a style="font-weight:bold;" data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+    </ul>
+  </div>
+  <div class="mm">
+    <div class="cat">
+      <span><h3>General Links</h3></span>
+      <ul>
+        <li onclick="myFunction()"><h1>&#9776;</h1>
+          <ul>
+            <li><a style="font-weight:bold;text-decoration:underline;" href="general-banks.html">Banks</a></li>
+            <li><a href="general-hospitals.html">Hospitals</a></li>
+            <li><a href="general-university.html">University</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> 
+    <div class="hosp1">
+      <img src="general/banklogo3.png" height="120" width="120"><h1>Banks</h1>
+    </div>
+    <div class="urbannav">
+      <center>
+        <table>
+          <tr>
+            <th><a href="#meb">MEB</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#kbz">KBZ</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#cb">CB</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#aya">AYA</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#agd">AGD</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#uab">UAB</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#yoma">YOMA</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#innwa">INNWA</a></th>
+          </tr>
+        </table>
+      </center>
+    </div><br><br>
+    <div class="bank2">
+      <table>
+        <tr>
+          <td><section id="meb"><div class="btab1"><img src="general/meblogo1.png" width="100" height="80" style="float: left; margin-left: 70px;"><h1>Myanmar Economic Bank</h1></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/MEB.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://www.meb.gov.mm/">http://www.meb.gov.mm/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Address- No.5,Mandalay-Lashio Road,(3)Quarter,Pyinoolwin</p>
+                <img src="general/blueph.png" style="margin-top: 5px;"><p>Phone- 085-28005 </p>
+                <img src="general/bluetime.png" style="margin-top: 5px;"><p>Opening Time- 9:30am-3:00pm</p>
+              </div>
+              <div class="btab24">
+                <img src="general/mpu.png" style="margin-top: 35px; float: right; margin-right: 30px;">
+              </div>
+            </div><section id="meb"></td>
+          <td><section id="kbz"><div class="btab1"><img src="general/kbzlogo.png" width="100" height="80" style="float: left;"><h1>Kanbawza Bank</h1></div></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/KBZ.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://www.kbzbank.com/">http://www.kbzbank.com/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab22">
+                <table>
+                   <tr>
+                    <th class="alignrightt"> Branch 1</th>
+                    <th class="alignrightt">Branch 2</th>
+                    <th class="alignrightt">Branch 3</th>
+                  </tr>
+                  <tr>
+                    <td style="border-left: 0;"><img src="general/blueloc.png">Mdy-Lashio Rd, Near &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pearl Phyu Sweater &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shop, Pyin Oo Lwin</td>
+                    <td style=""><img src="general/blueloc.png">Mdy-Lashio Rd, Near &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Purcell Tower, Pyin Oo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lwin</td>
+                    <td style="; padding-top: 10px;"><img src="general/blueloc.png">Mdy-Lashio Rd, Near &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aung Thitsar Hospital, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pyin Oo Lwin</td>
+                  </tr>
+                  <tr>
+                    <td style="border-left: 0;"><img src="general/blueph.png">085-28056</td>
+                    <td style=""><img src="general/blueph.png">085-28435</td>
+                    <td style=""><img src="general/blueph.png">085-28450</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="btab23"><img src="general/bluetime.png" style="margin-left: 190px;"><p>Opening Time- 9:30am-3:00pm</p></div>
+              <div class="btab244">
+                <table>
+                  <tr>
+                    <td><img src="general/mpu.png"></td>
+                    <td><img src="general/jcb.png"></td>
+                    <td><img src="general/mastercard.png"></td>
+                    <td><img src="general/visa.jpg"></td>
+                  </tr>
+                </table>
+              </div>
+            </div></section></td>
+        </tr>
+
+        
+        <tr>
+          <td><section id="cb"><div class="btab1"><img src="general/cblogo.png" width="120" height="80" style="float: left; margin-left: 70px;"><h1>Co-Operative Bank</h1></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/CB.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://www.cbbank.com.mm/">http://www.cbbank.com.mm/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab22">
+                <table>
+                   <tr>
+                    <th class="alignrightt"> Branch 1</th>
+                    <th class="alignrightt">Branch 2</th>
+                  </tr>
+                  <tr>
+                    <td style="border-left: 0;"><img src="general/blueloc.png">No.135, Near Pearl Phyu, Mdy-Lashio &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rd, Pyin Oo Lwin</td>
+                    <td style=""><img src="general/blueloc.png">No.30, Mdy-Lashio Rd, Nyan Taw Ward, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pyin Oo Lwin</td>
+                  </tr>
+                  <tr>
+                    <td style="border-left: 0;"><img src="general/blueph.png">085-28404</td>
+                    <td style=""><img src="general/blueph.png">085-21359</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="btab23"><img src="general/bluetime.png" style="margin-left: 190px;"><p>Opening Time- 9:30am-3:00pm</p></div>
+              <div class="btab244">
+                <table>
+                  <tr>
+                    <td><img src="general/mpu.png"></td>
+                    <td><img src="general/jcb.png"></td>
+                    <td><img src="general/mastercard.png"></td>
+                    <td><img src="general/visa.jpg"></td>
+                  </tr>
+                </table>
+              </div>
+            </div></section></td>
+          <td><section id="aya"><div class="btab1"><img src="general/ayalogo.png" width="100" height="80" style="float: left;"><h1>Ayeyarwady Bank</h1></div></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/AYA.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://www.ayabank.com/">http://www.ayabank.com/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Address- No.(185/B5),Mandalay-Lashio Road,(4)Quarter,Pyin Oo Lwin</p>
+                <img src="general/blueph.png" style="margin-top: 5px;"><p>Phone- 085-28457 </p>
+                <img src="general/bluetime.png" style="margin-top: 5px;"><p>Opening Time- 9:30am-3:00pm</p>
+              </div>
+              <div class="btab244">
+                <table>
+                  <tr>
+                    <td><img src="general/mpu.png"></td>
+                    <td><img src="general/jcb.png"></td>
+                    <td><img src="general/mastercard.png"></td>
+                    <td><img src="general/visa.jpg"></td>
+                  </tr>
+                </table>
+              </div>
+            </div></section></td>
+        </tr>
+
+        
+        <tr>
+          <td><section id="agd"><div class="btab1"><img src="general/agdlogo1.jpg" width="120" height="80" style="float: left; margin-left: 20px;"><h1>Asia Green Development Bank</h1></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/AGD.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://agdbank.com/">http://agdbank.com/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Address- Mandalay-Lashio Road, Near MK Fashion Store, Pyin Oo Lwin</p>
+                <img src="general/blueph.png" style="margin-top: 5px;"><p>Phone-  085-2021747, 085-2021748 </p>
+                <img src="general/bluetime.png" style="margin-top: 5px;"><p>Opening Time- 9:00am-3:00pm</p>
+              </div>
+
+              <div class="btab244">
+                <table>
+                  <tr>
+                    <td><img src="general/mpu.png"></td>
+                    <td><img src="general/jcb.png"></td>
+                    <td><img src="general/mastercard.png"></td>
+                    <td><img src="general/visa.jpg"></td>
+                  </tr>
+                </table>
+              </div>
+            </div></section></td>
+          <td><section id="uab"><div class="btab1"><img src="general/uablogo.png" width="100" height="80" style="float: left;"><h1>United Amara Bank</h1></div></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/UAB.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://unitedamarabank.com/">http://unitedamarabank.com/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Address- No.(59),9th Street,(4)Quarter,Pyin Oo Lwin</p>
+                <img src="general/blueph.png" style="margin-top: 5px;"><p>Phone- 085-23303 </p>
+                <img src="general/bluetime.png" style="margin-top: 5px;"><p>Opening Time- 9:30am-3:00pm</p>
+              </div>
+              <div class="btab244">
+                <table>
+                  <tr>
+                    <td><img src="general/mpu.png"></td>
+                    <td><img src="general/jcb.png"></td>
+                    <td><img src="general/mastercard.png"></td>
+                    <td><img src="general/visa.jpg"></td>
+                  </tr>
+                </table>
+              </div>
+            </div></section></td>
+        </tr>
+
+        
+        <tr>
+          <td><section id="yoma"><div class="btab1"><img src="general/yomalogo.jpg" width="100" height="80" style="float: left; margin-left: 150px; margin-top: -10px;"><h1>Yoma Bank</h1></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/YOMA.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="http://www.yomabank.com/">http://www.yomabank.com/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Address- No. 7, Mdy-Lashio Rd,Near Green Luck Petrol, Pyin Oo Lwin</p>
+                <img src="general/blueph.png" style="margin-top: 5px;"><p>Phone-  085-21612, 085-21615, 085-21616 </p>
+                <img src="general/bluetime.png" style="margin-top: 5px;"><p>Opening Time- 8:30am-3:00pm</p>
+              </div>
+
+              <div class="btab24">
+                <img src="general/mpu.png" style="margin-top:5px; float: right; margin-right: 30px;">
+              </div>
+            </div></section></td>
+          <td><section id="innwa"><div class="btab1"><img src="general/innwalogo.gif" width="100" height="80" style="float: left; margin-left: 150px;"><h1>Innwa Bank</h1></div></div><br clear="both"><br>
+            <div class="btab2">
+              <img src="general/INNWA.jpg" style="float: right; margin-right: 5px;">
+              <div class="btab21">
+                <table>
+                  <tr>
+                    <th colspan="2"><h3>Services</h3></th>
+                  </tr>
+                  <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/deposit4.png"></td>
+          <td><h4>Money Exchange</h4></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/atm2.png"></td>
+          <td><h4>Automated Teller Machine</h4></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/deposit5.png"></td>
+            <td><h4>Deposit/Withdraw Money</h4></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/mobile2.png"></td>
+            <td><h4>Online/Mobile Banking</h4></td>
+          </tr>
+          <tr class="altrow">
+            <td class="alignright"><img src="general/blueweb.png"></td>
+            <td><h4><a href="https://ablmm.com/">https://ablmm.com/</a></h4></td>
+          </tr>
+                </table>
+              </div><br><br>
+              <div class="btab23">
+                <img src="general/blueloc.png" style=""><p>Address- Mdy-Lashio Rd,Near Green Luck Petrol, Pyin Oo Lwin</p>
+                <img src="general/blueph.png" style="margin-top: 5px;"><p>Phone- 085-25625 </p>
+                <img src="general/bluetime.png" style="margin-top: 5px;"><p>Opening Time- 9:00am-3:00pm</p>
+              </div>
+              <div class="btab24">
+                <img src="general/mpu.png" style="margin-top:5px; float: right; margin-right: 30px;">
+              </div>
+            </div></section></td>
+        </tr>
+      </table>
+    </div><br><br><br>
+   <footer>
+      <a href="general-hospitals.html"><img src="general/20180813_164917.png" width="60" height="60" ></a>
+   </footer>
+  </div>
+  <div class="dog">
+    <h1>GENERAL</h1>
+  </div>
+</body>
+</html>

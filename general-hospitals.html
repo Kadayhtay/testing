@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hospitals</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background-color: #dff;
+}
+
+.mm {font-family: arial;
+background-color: #fff;}
+
+
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 6px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 150px;
+  position: relative;
+  top: 0px;
+  left: -160px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  right: 94px;
+  top: 80px;
+  color: #006650;
+  letter-spacing: 1px;}
+/* Slideshow container */
+
+  .hosp1{
+    margin-left: 450px;
+  }
+  .hosp1 img{
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .hosp1 h1{
+    margin-left:110px;
+    padding-top: 70px;
+      font-size: 3.5em;
+      text-decoration: underline;
+      font-family: Impact;
+      color: #006650;
+      text-shadow: 6px 6px 6px #fff;
+  }
+  .hosp2{
+    margin-left: 50px;
+    padding-top: 20px;
+  }
+  .hosp2 td{
+    width: 20%;
+  }
+  .hosp2 table td a img{
+    width:250px;
+    height: 180px;
+    border:2px solid #006650;
+    box-shadow: 3px 3px 3px #808080;
+  }
+  .hosp2 a,.hosp2 h2{
+    color:#006650;
+  }
+  .hosp2 h2{
+    border-left: 3px solid #006650;
+    padding-left: 7px;
+  }
+  .hosp3{
+  }
+  .hosp3 h1{
+    font-size: 3em;
+    text-decoration: underline;
+    font-family: Arial;
+    text-shadow: 3px 3px 3px #808080;
+    color:#006650;
+  }
+  .cz2 table{
+  width: 40%;
+  height: 280px;
+  margin-left: 60px;
+  border-collapse: collapse;
+  border-top: 3px solid #006650;
+  border-bottom: 3px solid #006650;
+
+}
+.cz2 tr,.cz2 td{
+  border-top: 2px solid #006650;
+  font-weight: bold;
+}
+.cz2 table img{
+  float: left;
+}
+.cz2 table th img{
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 200px;
+  margin-right: -180px;
+}
+.cz2 a{
+  color:black;
+}
+.textright{
+  text-align: left;
+  padding-right: 50px;
+}
+.altrow{
+  background-color: #BBE3EC;
+}
+.cz2 h4{
+  margin-left: 30px;
+  text-indent: 50px;
+  line-height: 40px;
+}
+.cz2 p img{
+  width:25px;
+  height: 25px;
+  float: left;
+  margin-left: 50px;
+  padding-right: 10px;
+}
+.cz2 p{
+  font-family: Arial;
+  font-weight: bold;
+  border-bottom: 3px solid #006650;
+  margin-right:500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.hosptab h1{
+  margin-right: 30px;
+  font-size: 2em;
+}
+.hosptab table{
+  margin-right: 50px;
+  width:45%;
+  border-collapse: collapse;
+}
+.hosptab table tr{
+  width:33.33%;
+  height: 40px;
+  border:3px solid #006650;
+  font-weight: bold;
+}
+.hosptab table td{
+  width:33.33%;
+  height: 40px;
+  border:3px solid #006650;
+  font-weight: bold;
+}
+.hosptab table th h2{
+  padding-left: -150px;
+}
+.hosptab table tr th img{
+  float: left;
+  width: 40px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 190px;
+  margin-right: -190px;
+}
+.alignright{
+  text-align: center;
+}
+.hosptab2 table tr td img{
+  width: 40px;
+  height: 30px;
+  margin-right: 50px;
+}
+.hosptab2 table{
+  width:35%;
+  margin-left: 100px;
+}
+.hosptab2 table tr{
+ 
+  height: 30px;
+  border:0;
+  font-weight: bold;
+  border-bottom: 3px solid #006650;
+}
+.hosptab2 table td{
+  
+  height: 30px;
+  border:0;
+  font-weight: bold;
+  border-bottom: 3px solid #006650;
+}
+.urbannav table{
+  border-collapse: collapse;
+  width:60%;
+  background-color: #006650;
+}
+.urbannav table tr,.urbannav table td{
+  width: 50%;
+  height: 30px;
+}
+.urbannav th a{
+  color:#fff;
+  text-decoration: none;
+}
+.urbannav th{
+  width: 25%;
+}
+.arrow{
+  background-color: #006650;
+}
+hr.style2 {
+  border-top: 3px double #006650;
+}
+section{
+  padding-top: 30px;
+}
+hr.style10 {
+  border-top: 1px dotted #8c8b8b;
+  border-bottom: 1px dotted #fff;
+}
+.dsa3 table{
+  width: 80%;
+  border: 0;
+}
+.dsa3 table tr,.dsa3 table td{
+  border: 0;
+}
+.dsa3 figure img{
+  height: 200px;
+  width: 300px;
+  border: 3px solid #006650;
+  border-radius: 5px;
+}
+.dsa4 table{
+  width: 80%;
+  border: 0;
+}
+.dsa4 table tr,.dsa4 table td{
+  border: 0;
+}
+.dsa4 figure img{
+  height: 150px;
+  width: 230px;
+  border: 3px solid #006650;}
+
+footer{background-color: #006650;
+  height: 70px;}
+footer img{
+  margin:5px 35px;}
+footer #sec{float: right;}
+</style>
+<link rel="stylesheet" type="text/css" href="css/main2.css">
+</head>
+<body>
+  <div class="nnav">
+    <ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a style="font-weight:bold;" data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+    </ul>
+  </div>
+  <div class="mm"> 
+    <div class="cat">
+      <span><h3>General Links</h3></span>
+      <ul>
+        <li onclick="myFunction()"><h1>&#9776;</h1>
+          <ul>
+            <li><a href="general-banks.html">Banks</a></li>
+            <li><a style="font-weight:bold;text-decoration:underline;" href="general-hospitals.html">Hospitals</a></li>
+            <li><a href="general-university.html">University</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div> 
+    <div class="hosp1">
+      <img style="background-color:#006650;" src="general/20180825_221637.png" height="100" width="100"><h1>Hospitals</h1>
+    </div>
+    <div class="urbannav">
+      <center>
+        <table>
+          <tr>
+            <th><a href="#general">General Hospital</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#agthit">Aung Thitsar</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#arrojan">Arrojan</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#chanthar">Chanthar Thukha</a></th>
+          </tr>
+        </table>
+      </center>
+    </div><hr class="style10" style="margin-top: 30px;">
+    <section id="general"><div class="hosp3">
+     <center><h1>Pyin Oo Lwin General Hospital</h1></center><br>
+     <img src="general/general.jpg" style="float: right; margin-right: 50px; margin-top: 20px; width: 450px;
+  height: 300px; border: 3px solid #006650; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+</div>
+     <div class="cz2">
+      <h4>General hospital is a public and the cheapest hospital in Pyin Oo Lwin.It was built in 1903 as 50 Bedded Civil Hospital.Township Hospital (100 Bedded) in 1948, 100 Bedded District Hospital in 1997 and 300 Bedded Hospital in 2006.</h4>
+      <center><p>Rating :&#10031; &#10031; &#10031; &#10032; &#10032;</p></center>
+      <p><img src="general/hosploc1.png" height="40" style="margin-top: -5px;"> Location- No.5061, Bazzar Road & Shwe Bo Street, Near Angilcan Church, Pyin Oo Lwin
+      </p>
+      <p><img src="general/hospph.png"> &nbsp;&nbsp;&nbsp;Phone- 085 22525</p><br clear="both">
+     </div>
+     <div class="hosptab">
+      <center><h1><img src="general/service.png" width="50" height="50">&nbsp;&nbsp;&nbsp;Services</h1></center>
+      <table style="float:right;">
+        <tr class="altrow">
+          <th colspan="3"><img src="general/deptlogo1.png" width="30" height="40"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&bull;Accident & Emergency</td>
+          <td>&bull;Cardiology</td>
+          <td>&bull;Child</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Diagnostic Imaging</td>
+          <td>&bull;Ear, Nose and Throat</td>
+          <td>&bull;Gastrointestinal</td>
+        </tr>
+        <tr>
+          <td>&bull;Hepatobiliary</td>
+          <td>&bull;Medicine</td>
+          <td>&bull;Neurology</td>
+        </tr>
+        <tr class="altrow">
+          <td>&bull;Obstetrics Gynecology</td>
+          <td>&bull;Ortho</td>
+          <td>&bull;Surgery</td>
+        </tr>
+      </table>
+      <div class="hosptab2"  style="padding-right: 150px;"><table>
+        <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/hosp24.png"></td>
+          <td><h3>24 Hours Service</h3></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/hospbed.png"></td>
+          <td><h3>300 Patients Capacity</h3></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/hosproom.png"></td>
+            <td><h3>Hall / Single Room</h3></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/hospot.png"></td>
+            <td><h3>Operation Theater</h3></td>
+          </tr>
+      </table></div>
+      <br><div class="dsa4">
+        <center>
+          <table style="margin-left: 40px;">
+            <tr>
+              <td><figure><img src="general/general2.jpg"></figure></td>
+              <td><figure><img src="general/general4.jpg"></figure></td>
+              <td><figure><img src="general/general5.jpg"></figure></td>
+              <td><figure><img src="general/general6.jpg"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div><br>
+     </div>
+   </section><hr class="style5">
+   <section id="agthit"><div class="hosp3">
+     <center><h1>Aung Thitsar Hospital</h1></center><br>
+     <img src="general/agthit1.jpg" style="float: left; margin-left: 50px; margin-top: 20px; width: 450px;
+  height: 300px; border: 3px solid #006650; margin-right:25px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+</div>
+     <div class="cz2">
+      <h4>Aung Thitsar hospital is the private and is famous for their best relations.Situating near bazzar and super market is the best reason to choice them.Their kind and warm relations will help you to stay more conveniently. </h4>
+      <center><p style="margin-right: 0px; margin-left: 50px;">Rating :&#10031; &#10031; &#10031; &#10031; &#10032;</p></center>
+      <p style="margin-right: 0px; margin-left: 50px;"><img src="general/hosploc1.png" height="40" style="margin-top: -5px;"> Location- Corner of Mdy-Lashio Rd and Circular Rd,Near Thu Mingalar Market, Pyin Oo Lwin
+      </p>
+      <p style="margin-right: 0px; margin-left: 50px;"><img src="general/hospph.png"> &nbsp;&nbsp;&nbsp;Phone- 085 21566, 085 29784</p><br clear="both">
+     </div>
+     <div class="hosptab">
+      <center><h1><img src="general/service.png" width="50" height="50">&nbsp;&nbsp;&nbsp;Services</h1></center>
+      <table style="float:right;">
+        <tr class="altrow">
+          <th colspan="2"><img src="general/deptlogo1.png" width="30" height="40"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&#10102; Cardiology</td>
+          <td>&#10103; Dermatology</td>
+        </tr>
+        <tr class="altrow">
+          <td>&#10104; Diagnostic Imaging</td>
+          <td>&#10105; Emergency</td>
+        </tr>
+        <tr>
+          <td>&#10106; Gastrointestinal</td>
+          <td>&#10107; Medicine</td>
+        </tr>
+        <tr class="altrow">
+          <td>&#10108; Obstetrics Gynecology</td>
+          <td>&#10109; Surgery</td>
+        </tr>
+      </table>
+      <div class="hosptab2"  style="padding-right: 150px;"><table>
+        <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/hosp24.png"></td>
+          <td><h3>24 Hours Service</h3></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/hospbed.png"></td>
+          <td><h3>120 Patients Capacity</h3></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/hosproom.png"></td>
+            <td><h3>Single / VIP Room</h3></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/hospot.png"></td>
+            <td><h3>Operation Theater</h3></td>
+          </tr>
+      </table></div>
+      <br><div class="dsa4">
+        <center>
+          <table style="margin-left: 40px;">
+            <tr>
+              <td><figure><img src="general/agthit2.jpg"></figure></td>
+              <td><figure><img src="general/agthit3.jpg"></figure></td>
+              <td><figure><img src="general/agthit5.jpg"></figure></td>
+              <td><figure><img src="general/agthit6.jpg"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div><br>
+     </div>
+   </section><hr class="style5">
+   <section id="arrojan"><div class="hosp3">
+     <center><h1>Arrojan Hospital</h1></center><br>
+     <img src="general/arrojan1.jpg" style="float: right; margin-right: 50px; margin-top: 20px; width: 450px;
+  height: 300px; border: 3px solid #006650; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+</div>
+     <div class="cz2">
+      <h4>Arrojan hospital is the private and the most expensive hospital in Pyin Oo Lwin.But situating in downtown area will help you to get easily whatever you want to buy and you can get kind and warmness from doctors and all staffs.</h4>
+      <center><p>Rating :&#10031; &#10031; &#10031; &#10032; &#10032;</p></center>
+      <p><img src="general/hosploc1.png" height="40" style="margin-top: -5px;"> Location- Mdy-Lashio Rd, Near KBZ Bank Branch(1) and Railway Station Road, Pyin Oo Lwin
+      </p>
+      <p><img src="general/hospph.png"> &nbsp;&nbsp;&nbsp;Phone- 085 23060, 085 21635</p><br clear="both">
+     </div>
+     <div class="hosptab">
+      <center><h1><img src="general/service.png" width="50" height="50">&nbsp;&nbsp;&nbsp;Services</h1></center>
+      <table style="float:right;">
+        <tr class="altrow">
+          <th colspan="3"><img src="general/deptlogo1.png" width="30" height="40"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&#10102; Cardiology</td>
+          <td>&#10103; Dermatology</td>
+        </tr>
+        <tr class="altrow">
+          <td>&#10104; Diagnostic Imaging</td>
+          <td>&#10105; Emergency</td>
+        </tr>
+        <tr>
+          <td>&#10106; Gastrointestinal</td>
+          <td>&#10107; Medicine</td>
+        </tr>
+        <tr class="altrow">
+          <td>&#10108; Obstetrics Gynecology</td>
+          <td>&#10109; Surgery</td>
+        </tr>
+      </table>
+      <div class="hosptab2"  style="padding-right: 150px;"><table>
+        <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/hosp24.png"></td>
+          <td><h3>24 Hours Service</h3></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/hospbed.png"></td>
+          <td><h3>100 Patients Capacity</h3></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/hosproom.png"></td>
+            <td><h3>Single Normal/ Single Special/ VIP Room</h3></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/hospot.png"></td>
+            <td><h3>Operation Theater</h3></td>
+          </tr>
+      </table></div>
+      <br><br>
+     </div>
+   </section><hr class="style5">
+   <section id="chanthar"><div class="hosp3">
+     <center><h1>Chanthar Thukha Hospital</h1></center><br>
+     <img src="general/chanthar3.jpg" style="float: left; margin-left: 50px; margin-top: 20px; width: 450px;
+  height: 300px; border: 3px solid #006650; margin-right:25px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+</div>
+     <div class="cz2">
+      <h4>Chanthar Thukha hospital is the private and have the most perfect facilities in Pyin Oo Lwin.The hospital area is wide,quite and it is more suitable for those who want to stay quitely.Perfect facilities will help you to stay more comfortably.</h4>
+      <center><p style="margin-right: 0px; margin-left: 50px;">Rating :&#10031; &#10031; &#10031; &#10031; &#10032;</p></center>
+      <p style="margin-right: 0px; margin-left: 50px;"><img src="general/hosploc1.png" height="40" style="margin-top: -5px;"> Location- No.32,Nandar Road,Quarter(6),Kandawlay, Pyin Oo Lwin
+      </p>
+      <p style="margin-right: 0px; margin-left: 50px;"><img src="general/hospph.png"> &nbsp;&nbsp;&nbsp;Phone- 085 28077</p><br clear="both">
+     </div>
+     <div class="hosptab">
+      <center><h1><img src="general/service.png" width="50" height="50">&nbsp;&nbsp;&nbsp;Services</h1></center>
+      <table style="float:right;">
+        <tr class="altrow">
+          <th colspan="2"><img src="general/deptlogo1.png" width="30" height="40"><h2>Departments</h2></th>
+        </tr>
+        <tr>
+          <td>&#10102; Cardiology</td>
+          <td>&#10103; Dermatology</td>
+        </tr>
+        <tr class="altrow">
+          <td>&#10104; Diagnostic Imaging</td>
+          <td>&#10105; Emergency</td>
+        </tr>
+        <tr>
+          <td>&#10106; Gastrointestinal</td>
+          <td>&#10107; Medicine</td>
+        </tr>
+        <tr class="altrow">
+          <td>&#10108; Obstetrics Gynecology</td>
+          <td>&#10109; Surgery</td>
+        </tr>
+      </table>
+      <div class="hosptab2"  style="padding-right: 150px;"><table>
+        <tr class="altrow" style="border-top:3px solid #006650;">
+          <td class="alignright"><img src="general/hosp24.png"></td>
+          <td><h3>24 Hours Service</h3></td>
+        </tr>
+        <tr>
+          <td class="alignright"><img src="general/hospbed.png"></td>
+          <td><h3>120 Patients Capacity</h3></td>
+        </tr>  
+          <tr class="altrow">
+            <td class="alignright"><img src="general/hosproom.png"></td>
+            <td><h3>Single / VIP Room</h3></td>
+          </tr>
+          <tr>
+            <td class="alignright"><img src="general/hospot.png"></td>
+            <td><h3>Operation Theater</h3></td>
+          </tr>
+      </table></div>
+      <br><div class="dsa3">
+        <center>
+          <table style="margin-left: 80px;">
+            <tr>
+              <td><figure><img src="general/chanthar.jpg"></figure></td>
+              <td><figure><img src="general/chanthar1.jpg"></figure></td>
+              <td><figure><img src="general/chanthar2.jpg"></figure></td>
+            </tr>
+          </table>
+        </center>
+      </div><br>
+     </div>
+   </section>
+   <hr class="style2">
+   <br><br><br>
+   <footer>
+      <a href="general-university.html"><img id="sec" src="general/20180813_164917.png" width="60" height="60" ></a>
+      <a href="general-banks.html"><img src="general/20180813_164852.png" width="60" height="60" ></a>
+   </footer>
+  </div>
+  <div class="dog">
+    <h1>GENERAL</h1>
+  </div>
+</body>
+</html>

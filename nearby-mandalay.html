@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mandalay</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<style>
+.mm{font-family: arial;}
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 4px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 190px;
+  position: relative;
+  top: 0px;
+  left: -200px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  right: 90px;
+  top: 80px;
+	font-family: arial;}
+p{float:right;
+	margin:50px;
+}
+header{font-size: 23px;
+	text-align: center;
+	margin-top: -1;
+	line-height: 60px;
+	color: #fff;
+	text-shadow: 3px 2px 2px #006650;
+	font-family: Impact;
+	letter-spacing: 3px;}
+.container{position:fixed;
+		   text-align: center;
+		   color:white;}
+.top-right{position: :absolute;
+		   top:-200px;
+		   right: :400px;  }
+h2{
+ color:#000;
+ font-size: 2em;}
+.hh{margin:60px;
+    }
+span{font-weight: bold;}
+table{width: 100%;
+	border-collapse: collapse;
+	margin:  auto auto auto 15px;
+}
+td{line-height: 28px;
+	border-bottom:1px solid #006650;
+	border-top:1px solid #006650;
+	padding: 10px;
+	font-size: 1.01em;
+	width: 600px;
+	color:#000;
+}
+tr:hover{background-color:#c7effa;}
+tr{background-color: #dff;
+}
+p{font-size:1.2em;
+  color:#000;}
+.top{margin-top: 50px;}
+.fg{background-color: #006650;
+width: 100%;
+height: 60px;}
+#right{float: right;
+padding-top: 5px;
+padding-right: 20px;}
+.gi ul{list-style-type:none;
+	padding-top: 20px;
+padding-left: 10px;}
+.gi li{display:inline-block;
+	   padding-top: 5px;
+	   padding-left: 5px;
+	   padding-right: 5px;
+	   padding-bottom: 10px;
+	   width: 350px;
+	   background-color: #c7effa;
+	   text-align: center;
+	   font-style: italic;
+	   font-family: Georgia, serif;}
+header{margin: 60px auto auto auto;
+	   text-align: center;
+	   font-size: 1.8em;}
+.js{border-radius: 5px;
+border: 3px solid #006650;
+margin: 50px;}
+.mm h3{margin-left: 10px;
+ color:#000;
+ font-size: 1.5em;}
+p{text-align: justify;
+	line-height: 30px;
+	text-justify:inter-word;}
+.lolo p{margin-top: 0px;}
+footer{background-color: #006650;
+  height: 70px;}
+footer img{
+  margin:5px 35px;}
+footer #sec{float: right;}
+.hhhhh{
+	font-size: 3em;
+	font-family: arial;}
+</style>
+</head>
+<body>
+	<div class="nnav">
+		<ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a style="font-weight:bold;" data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+		</ul>
+	</div>
+	<div class="cat">
+		<span><h3>Towns List</h3></span>
+      <ul>
+        <li><h1>&#9776;</h1>
+          <ul>
+             <li><a style="text-decoration:underline;font-weight:bold;" href="nearby-mandalay.html">Mandalay</a></li>
+            <li><a href="nearby-mogok.html">Mogok</a></li>
+            <li><a  href="nearby-shan state.html">Northern Shan State</a></li>
+            </ul>
+        </li>
+      </ul>
+	</div>
+	<div class="mm">
+		<div class="lolo">
+			<center><img src="Nearby Town/Mandalay/palace.jpg" width="100%" height="400">
+				<h1 class="hhhhh">Mandalay</h1></center><br>
+			
+			<p class="">&nbsp; &nbsp; &nbsp; 	Mandalay is about 69km away from Pyin Oo Lwin. It is the second-largest city and the last royal capital of Myanmar (Burma).Mandalay is Burma's cultural and religious center of Buddhism, having numerous monasteries and more than 700 pagodas. Mandalay is the economic centre of Upper Burma and considered the centre of Burmese culture.</p></div><br>
+    		<br><br>
+    		<div class="hh"><h2 class="top">Around The City</h2>
+ 			<center>
+ 				<table>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/Mandalay_Hill_3.jpg" width="480" height="300" ></center></td>
+ 						<td><span>Mandalay Hill</span> : The hill has for long been a holy mount. Legend has it that the Buddha, on his visit, had prophesied that a great city would be founded at its foot. Mandalay Hill, 230 metres in elevation, commands a magnificent view of the city and surrounding countryside. The construction of a motor road to reach the hill-top has already been finished.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/palace1.png" width="480" height="300" ></center></td>
+ 						<td><span>The Mandalay Palace</span> : The whole magnificent palace complex was destroyed by a fire during World War II. However, the finely built palace walls, the city gates with their crowning wooden pavilions and the surrounding moat still represent an impressive scene of the Mandalay Palace, "Mya-nan-san-kyaw Shwenandaw", which has been rebuilt using forced labor. A model of the Mandalay Palace, Nanmyint-saung and Mandalay Cultural Museum are located inside the Palace grounds.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/kuthodaw-pagoda-4[6].jpg" width="480" height="300" ></center></td>
+ 						<td><span>Kuthodaw Pagoda</span> : Kuthodaw Pagoda is a Buddhist stupa, located at the foot of Mandalay Hill in Mandalay, Burma.It was built during the reign of King Mindon Min. Worried that the teachings of Gautama Buddha may be lost to posterity with the invasion of the British to the region, King Mindon conceived the idea of preserving the entire text of the Tipitaka Pali Canon of Theravada Buddhism, by inscribing them in huge stone slabs. Each slab is a meter wide and a meter and a half tall, and 13 centimeters thick, and there are 730 slabs in total. Each stone tablet is housed in its own shrine, called kyauksa gu, with a precious gem on top, and they are arranged around the central golden pagoda. These 730 slabs of marble are figuratively called the "world's largest book".</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/1920px-20160729_Atumashi_Mandalay_5865.jpg" width="480" height="300" ></center></td>
+ 						<td><span>Atumashi Monastery</span> : The "Atumashi kyaung", which literally means "inimitable vihara", is also one of the well known sights. The original structure was destroyed by a fire in 1890 though the masonry plinth survived. It was indeed an inimitable one in its heyday. The reconstruction project was started by the government on 2 May 1995 and completed in June 1996.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/pagoda1.jpg" width="480" height="300" ></center></td>
+ 						<td><span>Mahamuni Buddha Temple</span> : The image of Gautama Buddha at Mahamuni Buddha Temple is said to have been cast in the life-time of the Gautama Buddha and that the Buddha embraced it seven times, thereby bringing it to life. Consequently, devout Buddhists hold it to be alive and refer to it as the Mahamuni Sacred Living Image. Revered as the holiest pagoda in Mandalay, It was built by King Bodawpaya in 1784. The image in a sitting posture is 12 feet and 7 inches (3.8 m) high. As the image was brought from Rakhine State, it was also called the Great Rakhine Buddha. The early morning ritual of washing the Face of Buddha Image draws a large crowd of devotees everyday. The Great Image is also considered as the greatest in Burma next to Shwedagon Pagoda. A visit to Mandalay is incomplete without a visit to Mahamuni Pagoda.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/Shwenandaw-Monastery-mandalay.jpg" width="480" height="300" ></center></td>
+ 						<td><span>Shwenandaw Monastery</span> : Famous for its intricate wood carvings, this monastery is a fragile reminder of the old Mandalay Palace. Actually, it was a part of the old palace later moved to its current site, close to Atumashi Monastery, by King Thibaw in 1880.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/Bagaya-Monastery.jpg" width="480" height="300" ></center></td>
+ 						<td><span>Bagaya Monastery</span> : This magnificent monastery is also known as Maha Waiyan Bontha Bagaya Monastery.During King Hsinbyushin's reiogn (1763-76), Maha Thiri Zeya Thinkhaya, town officer of Magwe built the monastery in the Bagaya monastic establishment and dedicated to Shin Dhammabhinanda. It is one of the famous tourists attractions in Burma.The Bagaya Monastery which consists of the seven-tiered spire has Dhanu hall and Bhawga hall. It also has eight stairways made up of bricks. The monastery, which was built with 267 gigantic teak wood posts, has a structure of great dimensions: 188 feet (57 m) high in length and 103 feet (31 m) in width.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/mingun.jpg" width="480" height="300" ></center></td>
+ 						<td><span>The Mingun Pahtodawgyi (Amarapura)</span> :The Mingun Pahtodawgyi is one of the famous monuments in the world. It is also known as the world's largest unfinished pagoda. The building of Mingun Pahtodawgyi started in 1791 and stopped at 162 feet height. If it had been completed, it would have been the largest monument in the world with a height of 500 feets. Its girth is about 450 square feet.</td>
+ 					</tr>
+ 					<tr>
+ 				    	<td><center><img src="Nearby Town/Mandalay/UPain.png" width="480" height="300" ></center></td>
+ 						<td><span>U Bein Bridge</span> : A 1.2 km wooden footbridge (longest teak bridge in the world) built by the mayor U Bein salvaging the unwanted teak columns from the old palace during the move to Mandalay</td>
+ 					</tr>
+ 				</table>
+ 			</center>
+ 		</ul>
+ 	</div><br><br>
+ 	<div class="js">
+				<center><h3>Mandalay Senses</h3></center>
+				<center>
+						<div class="gi">
+							<ul >
+								
+								<li><a target="_blank" href="Nearby Town/Mandalay/mdy1.png"><img src="Nearby Town/Mandalay/mdy1.png" width="320" height="200"></a></li>
+								<li><a target="_blank" href="Nearby Town/Mandalay/mdy3.jpg"><img src="Nearby Town/Mandalay/mdy3.jpg" width="320" height="200"></a></li>
+								<li><a target="_blank" href="Nearby Town/Mandalay/mdy4.jpg"><img src="Nearby Town/Mandalay/mdy4.jpg" width="320" height="200"></a></li><br><br>
+								<li><a target="_blank" href="Nearby Town/Mandalay/mdy5.png"><img src="Nearby Town/Mandalay/mdy5.png" width="320" height="200"></a></li>
+								<li><a target="_blank" href="Nearby Town/Mandalay/mdy6.png"><img src="Nearby Town/Mandalay/mdy6.png" width="320" height="200"></a></li>
+								<li><a target="_blank" href="Nearby Town/Mandalay/mdy7.png"><img src="Nearby Town/Mandalay/mdy7.png" width="320" height="200"></a></li>
+							</ul>
+						<div>
+				</center>
+				</div><br><br><br>
+   <footer>
+      <a href="nearby-mogok.html"><img id="sec" src="general/20180813_164917.png" width="60" height="60" ></a>
+      <a href=""></a>
+   </footer>
+	</div>
+</div>
+     <div class="dog">
+		<h1>NEARBY TOWNS</h1>
+	 </div>
+</body>
+</html>

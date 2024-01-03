@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Royal Jasmine Hotel</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<style>
+
+.mm {font-family: arial;
+	color: #006650;}
+.cat ul li{background-color: #006650;
+	list-style: none;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 50px;
+	top: 90px;
+	border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+	margin-top: -4px;
+	margin-left: 6px;}
+.cat ul li ul{position: absolute;
+	top: 35px;}
+.cat ul li ul li{display: none;
+	width: 190px;
+	position: relative;
+	top: 0px;
+	left: -200px;
+	padding: 10px 5px 0px 10px;
+	border: 1px solid #fff;}
+.cat ul li ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-family: arial;
+	transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+	text-decoration: underline;
+	width: 100%;
+	padding: 5px;
+	font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+	right: 94px;
+	top: 80px;}
+.hh h1{font-size: 2.7em;
+	padding-top: 80px;
+	margin-left: -50px;
+	letter-spacing: 3px;
+	color: #1e89cc;
+	margin-bottom: 100px;
+	text-shadow:3px 2px 6px #000;}
+.hh h1 img{background-color: gold;
+	position: relative;
+	bottom: -20px;}
+.hh {border-bottom: 20px solid #006650;}
+.hh h3{
+	margin-left: 100px;
+	margin-top: -40px;}
+.hh h3 span{color:gold;
+	font-size: 25px;}
+.hh h3 span:hover{cursor: pointer;}
+.popo{position: absolute;
+	top: 270px;
+	right: 250px;
+	line-height: 25px;
+	text-align: right;}
+.popo #first{font-size: 15px;
+	text-decoration: line-through;}
+.popo #second{font-size: 25px;
+	color: red;}
+.bobo{padding: 50px;
+}
+.proper{
+	box-shadow: 3px 4px 3px #006650;
+	border: 2px solid #006650;
+	width: 550px;
+	padding-left: 10px;}
+.proper h3{margin-bottom: -12px;}
+.lolo{border-bottom: 2px solid #c7effa;}
+.pp{text-align: right;
+	padding-right: 20px;}
+.price h3{border-top:  2px solid #c7effa;
+	border-bottom:  2px solid #c7effa;
+	padding-top: 5px;
+	margin-left: -10px;
+	padding-left: 10px;}
+.price p{margin: 0;
+	padding-left: 20px;}
+.price p a{text-decoration: none;
+	color: #006650;}
+.price p a:hover{text-decoration: underline;}
+.price p span{float: right;
+	padding-right: 30px;
+	color: red;}
+
+.filter{border:  2px solid #006650; 
+	height: 200px;
+	margin-top: 50px;
+	width:550px;
+	box-shadow: 3px 4px 3px #006650;}
+.filter h4{padding-left: 20px;}
+.fifi{float: left;
+	width: 130px;
+	text-align: center;}
+.fifi img{background-color: #006650;
+	transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.fifi img:hover{width:60px;
+	height: 60px;}
+#outerbox{width:600px;
+	overflow:hidden;
+	position: static;
+	margin-left: 5px;
+	border: 5px solid #006650;
+	border-bottom: 45px solid #006650;}
+#sliderbox{position:relative;
+	width:2400px;
+	animation-name:Jamal;
+	animation-duration:25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;}
+#sliderbox img{float:left;}
+@keyframes Jamal{
+	0%{left:0px;}
+	13%{left:0px;}
+	16%{left:-600px;}
+	30%{left:-600px;}
+	33%{left:-1200px;}
+	47%{left:-1200px;}
+	50%{left:-1800px;}
+	63%{left:-1800px;}
+	66%{left:-1200px;}
+	80%{left:-1200px;}
+	83%{left:-600px;}
+	97%{left:-600px;}
+	100%{left:0px;}
+}
+.vide h1{margin-right: 630px;
+	padding:50px 30px;
+	margin-top: 40px;
+	border: 5px solid #006650;}
+.des{margin: 0px 50px;
+	box-shadow: 3px 4px 3px #006650;
+	border: 2px solid #006650;}
+.des h2{text-indent: 30px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #c7effa;}
+.des p{padding: 4px 50px;
+	text-indent: 60px;
+	line-height: 40px;
+	text-align: justify;
+	text-justify:inter-word;}
+
+
+.bbtn{padding-left: 50px;}
+.bbtn h2{color: #006650;
+	border: 2px solid #006650;
+	width: 208px;
+	float: left;
+	padding: 5px 0px;
+	margin-right: 1px;
+	margin-bottom: 0;
+	text-align: center;
+	margin-top: 80px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	transition:0.4s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.4s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.4s cubic-bezier(0.1,0.1,0.5,1.4); }
+.bbtn h2:hover{cursor: pointer;}
+.room1{border:  2px solid #006650;
+	width: 600px;
+	float: left;position: absolute;
+	margin-left: 50px;
+	margin-top: 1px;
+	box-shadow: 3px 4px 3px #006650;}
+.room1 ul li img{background-color: #006650;}
+.room1 h2{text-indent: 50px;
+	padding: 10px;
+	border-top: 2px solid #c7effa;
+	border-bottom: 2px solid #c7effa;}
+.room1 h3{text-indent: 30px;
+	padding: 10px;
+	border-top: 2px solid #c7effa;
+	border-bottom: 2px solid #c7effa;}
+.room1 ul{padding-right: 110px;}
+.room1 ul li{list-style: none;
+	line-height: 30px;}
+.room1 #one{padding-left: 15px;
+	border-bottom: 2px solid #c7effa;
+	padding-bottom: 5px;}
+.room1 #two{float: right;
+	position: relative;
+	bottom: 10px;
+	right: 10px;}
+.room1 #two span{color: red;
+	font-size: 25px;}
+.room2{border:  2px solid #006650;
+	width: 600px;
+	float: right;
+	margin-right: 40px;
+	margin-top: 1px;
+	box-shadow: 3px 4px 3px #006650;}
+.room2 ul li img{background-color: #006650;}
+.room2 h2{text-indent: 50px;
+	padding: 10px;
+	border-top: 2px solid #c7effa;
+	border-bottom: 2px solid #c7effa;}
+.room2 h3{text-indent: 30px;
+	padding: 10px;
+	border-top: 2px solid #c7effa;
+	border-bottom: 2px solid #c7effa;}
+.room2 ul{padding-right: 110px;}
+.room2 ul li{list-style: none;
+	line-height: 30px;}
+.room2 #one{padding-left: 15px;
+	border-bottom: 2px solid #c7effa;
+	padding-bottom: 5px;}
+.room2 #two{float: right;
+	position: relative;
+	bottom: 10px;
+	right: 10px;}
+.room2 #two span{color: red;
+	font-size: 25px;}
+
+
+.feature{
+	width: 100%;}
+.feature td{height: 30px;
+	padding-left: 50px;
+	border-bottom: 1px solid #c7effa;}
+.fac{
+	padding: 50px;}
+.fac h2{border-top: 3px solid #006650;
+	border-bottom: 3px solid #006650;
+	padding: 20px ;
+	text-align: center;}
+.fac table {width: 100%;}
+.fac table td{height: 40px;
+	width: 35%;
+	border-bottom: 2px solid #c7effa;
+	padding-left: 30px;}
+.fac table td img{background-color: #006650;margin-right: 20px;}
+.use{padding: 50px;}
+.use h2{text-indent: 50px;
+	border-bottom: 3px solid #006650;}
+.use h2 span{padding-left: 300px;}
+.use table{width: 30%;
+	border-spacing: 10px;
+	float: left;
+	margin-right: 200px;}
+.use table td{height: 30px;
+	border-bottom: 2px solid #c7effa;
+	border-right: 2px solid #c7effa;
+	padding-left: 20px;}
+.use table td span{float: right;
+	padding-right: 15px;}
+.useful{padding-right: 100px;}
+.useful p{}
+footer{width: 100%;
+	height: 100px;
+	background-color: #006650;}
+.pre{
+	margin: 0px 50px;
+	margin-top: 17px;}
+.pre a{color: #fff;
+	text-decoration: none;}
+.pre a:hover{text-decoration: underline;}
+.image{padding: 50px;}
+.image h2{text-indent: 21em;
+	border-bottom: 3px solid #006650;}
+.image section{height: 980px;
+	padding-left: 5px;
+	border: 3px solid #006650;}
+.image figure{float: left;
+	padding: 5px;
+	height: 185px;opacity: .9;
+	border: 2px solid #006650;
+	background-color: #006650;
+	margin: 15px;
+	transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+	-moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.image figure img{
+	border: 2px solid #006650;}
+.image figure:hover{opacity: 1;
+	background-color: #c7effa;
+	transform:scale(1.1);}
+.image figure center{font-weight: bold;}
+
+
+
+.container{position: relative;
+	border: 1px solid #006650;
+ 	width: 98%;
+ 	top: 5px;
+ 	left: 5px;
+ 	height: 300px;}
+.container img{width: 100%;
+	height: 100%;
+	position: absolute;}
+.container .btn{position:relative;
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 25px;
+	top: 140px;
+	background-color: #fff;
+	color: black;
+	opacity: .4;
+	font-size: 19px;}
+.container .btn:hover{cursor: pointer;}
+.container #btn2{float: right;}
+.container .btn:hover{opacity: .7;}
+.container p{position:relative;
+	width: 30px;
+	height: 30px;
+	top: 220px;
+	color: #fff;
+	font-size: 19px;}
+.container p span:hover{cursor: pointer;}
+</style>
+</head>
+<body>
+	<div class="nnav">
+		<ul>
+			<li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+			<li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+			<li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a style="font-weight:bold;" data-text="Hotel" href="hotel.html">Hotel</a></li>
+			<li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+			<li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+			<li><img src="home/20180723_234740.png" width="20" height="20"><a data-text="General" href="general.html">General</a></li>
+			<li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+			<li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+			<li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+			<li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+		</ul>
+	</div>
+	<div class="mm"> 
+		<div class="cat">
+			<span><h3>Hotels List</h3></span>
+			<ul>
+				<li ><h1>&#9776;</h1>
+					<ul>
+						<li><a href="hotel-hotel pyin oo lwin.html">Hotel Pyin Oo Lwin</a></li>
+						<li><a href="hotel-aureum palace hotel & resort.html">Aureum Palace Hotel</a></li>
+						<li><a href="hotel-hotel shwe nann htike.html">Hotel Shwe Nann Htike</a></li>
+						<li><a href="hotel-hotel maymyo.html">Hotel Maymyo</a></li>
+						<li><a href="hotel-hotel akimomi.html">Hotel Akimomi</a></li>
+						<li><a href="hotel-royal parkview hotel.html">Royal Parkview Hotel</a></li>
+						<li><a href="hotel-kandawgyi hill resort.html">Kamdawgyi Hill Resort</a></li>
+						<li><a style="font-weight:bold;text-decoration:underline;" href="hotel-royal jasmine resort.html">Royal Jasmine Hotel</a></li>
+						<li><a href="hotel-win unity hotel.html">Win Unity Hotel</a></li>
+						<li><a href="hotel-royal reward resort.html">Royal Reward Resort</a></li>
+				</li>
+			</ul>
+
+		</div>
+		<div class="hh">
+			<center><h1><img src="hotel2/FB_IMG_1533802821507.jpg" width="100" height="80"> ROYAL&nbsp; JASMINE&nbsp; HOTEL</h1></center>
+			<h3>Resort <span>&#9733;&#9733;&#9733;</span> </h3>
+			<div class="popo"><span id="first"></span><br><span id="second">$30</span>/night</div>
+		</div>
+		<div class="bobo">
+			<div style="float:right;">
+				<div class="proper">
+					<h3><img src="hotel1/1532487668874.png" width="30" height="35" style="background-color:#006650;">Location</h3>
+					<p style="margin-left:20px;margin-top:20px;">No.5, Thu Min Galar Quarter, Pyin Oo Lwin City Center,<br> Pyin Oo Lwin, Myanmar</p>
+					<h3><img src="hotel1/20180731_215800.png" width="30" height="30" style="background-color:#006650;">  09456198555</h3>	
+					<div class="price">
+						<h3>The Best Price We Found</h3><br>
+						<p><a href="www.agoda.com">Agoda.com</a><span>$30</span></p><br>
+						<p><a href="www.pricelline.com">Pricelline.com</a><span>$30</span></p><br>
+
+						<p><a href="www.booking.com">Booking.com</a><span>$35</span></p><br>
+					</div>
+				</div>
+				<div class="filter">
+					<h4>Filter room options by:</h4>
+					<div class="fifi">
+						<img src="hotel1/20180725_193130.png" width="50" height="50">
+						<p>Free <br>breakfast</p>
+					</div>
+					<div class="fifi">
+						<img src="hotel1/20180725_192610.png" width="50" height="50">
+						<p>Pay later <br>option</p>
+					</div>
+					<div class="fifi">
+						<img src="hotel1/20180725_193522.png" width="50" height="50">
+						<p>Non-smoking</p>
+					</div>
+					<div class="fifi">
+						<img src="hotel2/20180809_150122.png" width="50" height="50">
+						<p>Twin Bed</p>
+					</div>
+				</div>
+			</div>
+			<div class="vide">
+				<div id="outerbox">
+					<div id="sliderbox">
+						<img src="hotel2/FB_IMG_1533818949051.jpg" width="600" height="350">
+						<img src="hotel2/FB_IMG_1533818977414.jpg" width="600" height="350">
+						<img src="hotel2/FB_IMG_1533819132590.jpg" width="600" height="350">
+						<img src="hotel2/FB_IMG_1533819145315.jpg" width="600" height="350">
+					</div>
+				</div>
+				<center><h1>Welcome To Royal Jasmine Hotel</h1></center>
+			</div>
+		</div>
+			<br style="clear:both;">
+			<div class="des">
+				<h2>Resort Description</h2>
+				<p>For travelers who want to take in the sights and sounds of Pyin Oo Lwin, Royal Jasmine Hotel is the perfect choice. With its location just 1.1 km from the city center and from the airport, this 3-star hotel attracts numerous travelers each year. With its convenient location, the hotel offers easy access to the city's must-see destinations.</p>
+				<p>Royal Jasmine Hotel also offers many facilities to enrich your stay in Pyin Oo Lwin. Top features of the hotel include free Wi-Fi in all rooms, 24-hour security, daily housekeeping, postal service, private check in/check out. </p>
+				<p>Hotel accommodations have been carefully appointed to the highest degree of comfort and convenience. In some of the rooms, guests can find television LCD/plasma screen, carpeting, clothes rack, complimentary instant coffee, free welcome drink. Whether you're a fitness enthusiast or are just looking for a way to unwind after a hard day, you will be entertained by top-class recreational facilities such as massage, garden, karaoke. Royal Jasmine Hotel is an ideal place of stay for travelers seeking charm, comfort and convenience in Pyin Oo Lwin.</p>
+			</div>
+			<br style="clear:both;">
+
+			<div class="bbtn">
+			<h2 class="btnn" onclick="toIndex(0)">Deluxe Twin</h2>
+			<h2 class="btnn" onclick="toIndex(1)">Deluxe Triple</h2>
+			<h2 class="btnnn" style="margin-left:228px;">Suite</h2>
+			</div>
+			<br style="clear:both;">
+
+			<div class="room1">
+				<div class="container">
+					<img class="slide" src="hotel2/FB_IMG_1533819035239.jpg">
+					<img class="slide" src="hotel2/FB_IMG_1533819026420.jpg">
+					<img class="slide" src="hotel2/royal-jasmine-hotel1.jpg">
+					<button class="btn" onclick="nextIndex(-1)" id="btn1">&#10094;</button>
+					<button class="btn" onclick="nextIndex(1)" id="btn2">&#10095;</button>
+					<p class="botton"><span onclick="oneIndex(0)">&#9899;</span><span onclick="oneIndex(1)">&#9898;</span><span onclick="oneIndex(2)">&#9898;</span></p>
+					<p class="botton"><span onclick="oneIndex(0)">&#9898;</span><span onclick="oneIndex(1)">&#9899;</span><span onclick="oneIndex(2)">&#9898;</span></p>
+					<p class="botton"><span onclick="oneIndex(0)">&#9898;</span><span onclick="oneIndex(1)">&#9898;</span><span onclick="oneIndex(2)">&#9899;</span></p>
+				</div>
+				<h2>Deluxe Twin</h2>
+				<ul>
+					<li><img src="hotel1/20180727_115520.png" width="22" height="22">&nbsp; Max 2 adults<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 children (0-5 years) stay FREE!</li>
+					<li><img src="hotel1/20180727_121006.png" width="20" height="20">&nbsp; 2 single beds</li>
+					<li><img src="hotel1/20180727_120534.png" width="24" height="24">&nbsp; 25 m&sup2; / 269 ft&sup2;</li>
+					<li><img src="hotel1/20180727_130205.png" width="23" height="23">&nbsp; Balcony / trreace</li>
+					<li><img src="hotel1/20180725_193522.png" width="22" height="22">&nbsp; Non-smoking</li>
+					<li><img src="hotel1/20180727_163557.png" width="25" height="25">&nbsp; Shower</li>
+					<li><img src="hotel1/20180802_164957.png" width="23" height="23">&nbsp; City view</li>
+				</ul>
+				<h3>Room Features: </h3>
+				<table class="feature">
+					<tr><td>&#10154; Air conditioning</td><td>&#10154; Alarm clock</td></tr>
+					<tr><td>&#10154; Blackout curtains</td><td>&#10154; Carpeting</td></tr>
+					<tr><td>&#10154; Closet</td><td>&#10154; Clothes rack</td></tr>
+					<tr><td>&#10154; Coffee / tea maker</td><td>&#10154; Desk</td></tr>
+					<tr><td>&#10154; Free bottle water</td><td>&#10154; Free instant coffee</td></tr>	
+					<tr><td>&#10154; Free Welcome drink</td><td>&#10154; Free Wi-Fi in all rooms</td></tr>
+					<tr><td>&#10154; Hair dryer</td><td>&#10154; Ironing facilities</td></tr>
+					<tr><td>&#10154; Linens</td><td>&#10154; Mini bar</td></tr>
+					<tr><td>&#10154; Refrigerator</td><td>&#10154; Satellite / cable channels</td></tr>
+					<tr><td>&#10154; Seating area</td><td>&#10154; Slipper</td></tr>	
+					<tr><td>&#10154; Sofa</td><td>&#10154; Telephone</td></tr>
+					<tr><td>&#10154; Toiletries</td><td>&#10154; Towels</td></tr>	
+					<tr><td>&#10154; Umbrella</td><td>&#10154; Wake-up service</td></tr>
+					<tr><td>&#10154; Whirlpool bathtub</td><td></td></tr>
+				</table>
+				<br><br>
+					<p id="two"><span>$30</span>/night</p>
+					<p id="one">Cancellation policy <img src="hotel1/1532607008311.png" width="15" height="15" style="background-color:#006650;padding:0;"></p><br>
+					<p id="two"><span>$35</span>/night</p>
+					<p id="one">Pay at the hotel<br>Cancellation policy <img src="hotel1/1532607008311.png" width="15" height="15" style="background-color:#006650;padding:0;"></p>
+			</div>
+			<div class="room1">
+				<div class="container">
+					<img class="slide2" src="hotel2/781384_15020511390025117336.jpg">
+					<img class="slide2" src="hotel2/38133522.jpg">
+					<img class="slide2" src="hotel2/1ffb82c7_z.jpg">
+					<button class="btn" onclick="nextIndex2(-1)" id="btn1">&#10094;</button>
+					<button class="btn" onclick="nextIndex2(1)" id="btn2">&#10095;</button>
+					<p class="botton2"><span onclick="twoIndex(0)">&#9899;</span><span onclick="twoIndex(1)">&#9898;</span><span onclick="twoIndex(2)">&#9898;</span></p>
+					<p class="botton2"><span onclick="twoIndex(0)">&#9898;</span><span onclick="twoIndex(1)">&#9899;</span><span onclick="twoIndex(2)">&#9898;</span></p>
+					<p class="botton2"><span onclick="twoIndex(0)">&#9898;</span><span onclick="twoIndex(1)">&#9898;</span><span onclick="twoIndex(2)">&#9899;</span></p>
+				</div>
+				<h2>Deluxe  Triple</h2>
+				<ul>
+					<li><img src="hotel1/20180727_115520.png" width="22" height="22">&nbsp; Max 2 adults<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 children (0-5 years) stay FREE!</li>
+					<li><img src="hotel1/20180727_121006.png" width="20" height="20">&nbsp; 1 single bed and 1 double bed</li>
+					<li><img src="hotel1/20180727_120534.png" width="24" height="24">&nbsp; 30 m&sup2; / 323 ft&sup2;</li>
+					<li><img src="hotel1/20180727_130205.png" width="23" height="23">&nbsp; Balcony / trreace</li>
+					<li><img src="hotel1/20180725_193522.png" width="22" height="22">&nbsp; Non-smoking</li>
+					<li><img src="hotel1/20180727_163557.png" width="25" height="25">&nbsp; Shower</li>
+					<li><img src="hotel1/20180802_164957.png" width="23" height="23">&nbsp; City view</li>
+				</ul>
+				<h3>Room Features: </h3>
+				<table class="feature">
+					<tr><td>&#10154; Air conditioning</td><td>&#10154; Blackout curtains</td></tr>
+					<tr><td>&#10154; Carpeting</td><td>&#10154; Closet</td></tr>
+					<tr><td>&#10154; Clothes drayer</td><td>&#10154; Clothes rack</td></tr>
+					<tr><td>&#10154; Coffee / tea maker</td><td>&#10154; DVD / CD player</td></tr>
+					<tr><td>&#10154; First aid kit</td><td>&#10154; Free bottle water</td></tr>
+					<tr><td>&#10154; Free instant coffee</td><td>&#10154; Free Welcome drink</td></tr>	
+					<tr><td>&#10154; Free Wi-Fi in all rooms</td><td>&#10154; Hair dryer</td></tr>
+					<tr><td>&#10154; Ironing facilities</td><td>&#10154; Linens</td></tr>
+					<tr><td>&#10154; Mini bar</td><td>&#10154; Mirror</td></tr>
+					<tr><td>&#10154; On-demand movies</td><td>&#10154; Private entrance</td></tr>
+					<tr><td>&#10154; Refrigerator</td><td>&#10154; Satellite / cable channels</td></tr>
+					<tr><td>&#10154; Seating area</td><td>&#10154; Slipper</td></tr>	
+					<tr><td>&#10154; Sofa</td><td>&#10154; Telephone</td></tr>
+					<tr><td>&#10154; Toiletries</td><td>&#10154; Towels</td></tr>	
+					<tr><td>&#10154; Umbrella</td><td>&#10154; Wake-up service</td></tr>
+					<tr><td>&#10154; Whirlpool bathtub</td><td></td></tr>
+				</table>
+				<br><br>
+					<p id="two"><span>$38</span>/night</p>
+					<p id="one">Cancellation policy <img src="hotel1/1532607008311.png" width="15" height="15" style="background-color:#006650;padding:0;"></p><br>
+					<p id="two"><span>$43</span>/night</p>
+					<p id="one">Pay at the hotel<br>Cancellation policy <img src="hotel1/1532607008311.png" width="15" height="15" style="background-color:#006650;padding:0;"></p>
+			</div>
+			<div style="margin-bottom:50px;" class="room2">
+				<div class="container">
+					<img class="slide4" src="hotel2/FB_IMG_1533819029136.jpg">
+					<img class="slide4" src="hotel2/FB_IMG_1533819032003.jpg">
+					<img class="slide4" src="hotel2/royal-jasmine-hotel(11).jpg">
+					<button class="btn" onclick="nextIndex4(-1)" id="btn1">&#10094;</button>
+					<button class="btn" onclick="nextIndex4(1)" id="btn2">&#10095;</button>
+					<p class="botton4"><span onclick="fourIndex(0)">&#9899;</span><span onclick="fourIndex(1)">&#9898;</span><span onclick="fourIndex(2)">&#9898;</span></p>
+					<p class="botton4"><span onclick="fourIndex(0)">&#9898;</span><span onclick="fourIndex(1)">&#9899;</span><span onclick="fourIndex(2)">&#9898;</span></p>
+					<p class="botton4"><span onclick="fourIndex(0)">&#9898;</span><span onclick="fourIndex(1)">&#9898;</span><span onclick="fourIndex(2)">&#9899;</span></p>
+				</div>
+				<h2>Suite</h2>
+				<ul>
+					<li><img src="hotel1/20180727_115520.png" width="22" height="22">&nbsp; Max 3 adults, plus 1 on extra bed<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2 children (0-5 years) stay FREE!</li>
+					<li><img src="hotel1/20180727_121006.png" width="20" height="20">&nbsp; 1 single bed and 1 double bed</li>
+					<li><img src="hotel1/20180727_120534.png" width="24" height="24">&nbsp; 30 m&sup2; / 323 ft&sup2;</li>
+					<li><img src="hotel1/20180727_130205.png" width="23" height="23">&nbsp; Balcony / trreace</li>
+					<li><img src="hotel1/20180725_193522.png" width="22" height="22">&nbsp; Non-smoking</li>
+					<li><img src="hotel1/20180727_163557.png" width="25" height="25">&nbsp; Shower</li>
+					<li><img src="hotel1/20180802_164957.png" width="23" height="23">&nbsp; City view</li>
+				</ul>
+				<h3>Room Features: </h3>
+				<table class="feature">
+					<tr><td>&#10154; Air conditioning</td><td>&#10154; Alarm clock</td></tr>
+					<tr><td>&#10154; Blackout curtains</td><td>&#10154; Carpeting</td></tr>
+					<tr><td>&#10154; Closet</td><td>&#10154; Clothes drayer</td></tr>
+					<tr><td>&#10154; Clothes rack</td><td>&#10154; Coffee / tea maker</td></tr>
+					<tr><td>&#10154; Desk</td><td>&#10154; Free bottle water</td></tr>	
+					<tr><td>&#10154; Free Wi-Fi in all rooms</td><td>&#10154; Hair dryer</td></tr>
+					<tr><td>&#10154; In-room safe box</td><td>&#10154; Ironing facilities</td></tr>
+					<tr><td>&#10154; Linens</td><td>&#10154; Mini bar</td></tr>
+					<tr><td>&#10154; Refrigerator</td><td>&#10154; Satellite / cable channels</td></tr>
+					<tr><td>&#10154; Seating area</td><td>&#10154; Slipper</td></tr>	
+					<tr><td>&#10154; Sofa</td><td>&#10154; Telephone</td></tr>
+					<tr><td>&#10154; Toiletries</td><td>&#10154; Towels</td></tr>	
+					<tr><td>&#10154; Wake-up service</td><td>&#10154; Whirlpool bathtub</td></tr>	
+				</table>
+				<br><br>
+					<p id="two"><span>$42</span>/night</p>
+					<p id="one">Cancellation policy <img src="hotel1/1532607008311.png" width="15" height="15" style="background-color:#006650;padding:0;"></p><br>
+					<p id="two"><span>$48</span>/night</p>
+					<p id="one">Pay at the hotel<br>Cancellation policy <img src="hotel1/1532607008311.png" width="15" height="15" style="background-color:#006650;padding:0;"></p>
+			</div>
+			<br style="clear:both;">
+			<br style="clear:left;">
+			<div class="fac">
+				<h2>Property Facilities</h2>
+				<table>
+					<tr>
+						<td><img src="hotel1/20180727_164938.png" width="30" height="30"> Free Wi-Fi in all rooms</td>
+						<td><img src="hotel1/20180727_165006.png" width="30" height="30"> Wi-Fi in public areas</td>
+						<td><img src="hotel1/20180727_141128.png" width="30" height="30"> Garden</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/1532844802927.png" width="30" height="30"> Closet</td>
+						<td><img src="hotel1/20180801_142120.png" width="30" height="30"> Karaoke</td>
+						<td><img src="hotel1/1532766854641.png" width="30" height="30"> Message</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180801_142157.png" width="30" height="30"> Smoking area</td>
+						<td><img src="hotel1/20180727_164842.png" width="30" height="30"> Tours</td>
+						<td><img src="hotel1/1532693404852.png" width="30" height="30"> Ticket services</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180729_131100.png" width="30" height="30"> Rental car</td>
+						<td><img src="hotel1/20180727_164054.png" width="30" height="30"> Bar</td>
+						<td><img src="hotel1/20180727_164017.png" width="30" height="30"> Coffee shop</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180729_131122.png" width="30" height="30"> Taxi service</td>
+						<td><img src="hotel1/20180727_164002.png" width="30" height="30"> Room service </td>
+						<td><img src="hotel1/1532685795387.png" width="30" height="30"> Restaurants</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180729_131136.png" width="30" height="30"> Check-in / out [express]</td>
+						<td><img src="hotel1/1532685766305.png" width="30" height="30"> Daily housekeeping</td>
+						<td><img src="hotel1/20180727_163920.png" width="30" height="30"> Laundry service</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180727_163841.png" width="30" height="30"> Front desk [24-hour]</td>
+						<td><img src="hotel1/1533109229672.png" width="30" height="30"> Family room</td>
+						<td><img src="hotel1/20180729_131149.png" width="30" height="30"> Check-in [24-hour]</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/1533109200655.png" width="30" height="30"> Check-in / out [private]</td>
+						<td><img src="hotel1/20180727_163813.png" width="30" height="30"> Bicycle rental</td>
+						<td><img src="hotel1/1532685728732.png" width="30" height="30"> Car park [on-site]</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180729_131215.png" width="35" height="35"> Security [24-hour]</td>
+						<td><img src="hotel1/1532685464961.png" width="25" height="25"> Telepone</td>
+						<td><img src="hotel1/20180801_142039.png" width="25" height="35"> Elevator</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180805_201505.png" width="30" height="30"> Facilities for disabled guests</td>
+						<td><img src="hotel1/20180727_163707.png" width="30" height="30"> Free bottled water</td>
+						<td><img src="hotel1/20180727_163655.png" width="30" height="30"> Hair dryer</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180805_201516.png" width="30" height="30"> Wheelchair accessible </td>
+						<td><img src="hotel1/20180729_131203.png" width="30" height="30"> Concierge</td>
+						<td><img src="hotel1/20180727_164054.png" width="30" height="30"> Mini bar</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180725_193522.png" width="30" height="30"> Non-smoking</td>
+						<td><img src="hotel1/20180727_163557.png" width="30" height="30"> Shower</td>
+						<td><img src="hotel1/20180729_131234.png" width="30" height="30"> Luggage storage</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180729_142321.png" width="30" height="30"> Valet packing</td>
+						<td><img src="hotel1/20180727_163934.png" width="30" height="30"> Currency exchange</td>
+						<td><img src="hotel1/20180727_163800.png" width="30" height="30"> Air conditioning</td>
+
+					</tr>
+					<tr>
+						<td><img src="hotel2/20180809_185010.png" width="30" height="30"> Carpeting</td>
+						<td><img src="hotel1/20180729_131030.png" width="30" height="30"> Clothes rack</td>
+						<td><img src="hotel1/1532685831350.png" width="30" height="30"> Coffee / tea maker</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/1533305444532.png" width="30" height="30"> Blackout curtains </td>
+						<td><img src="hotel1/20180729_131248.png" width="30" height="30"> Wi-Fi [free]</td>
+						<td><img src="hotel1/20180727_163613.png" width="30" height="30"> Satellite / cable channels</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/1532693432562.png" width="30" height="30"> Safety deposit boxes</td>
+						<td><img src="hotel2/1533817193345.png" width="35" height="30"> Ironing facilities</td>
+						<td><img src="hotel1/1533115173558.png" width="30" height="30"> Doorman</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180727_163627.png" width="30" height="30"> Linens</td>
+						<td><img src="hotel2/20180807_203455.png" width="35" height="35"> Kitchen</td>
+						<td><img src="hotel1/20180727_163828.png" width="30" height="30"> Airport transfer</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180727_130219.png" width="30" height="30"> Bacony / terrace</td>
+						<td><img src="hotel1/1532685497675.png" width="30" height="30"> Refrigerator</td>
+						<td><img src="hotel1/20180727_163508.png" width="30" height="30"> Seating area</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180729_131457.png" width="30" height="30"> Slipper</td>
+						<td><img src="hotel1/20180729_131554.png" width="30" height="30"> Sofa</td>
+						<td><img src="hotel1/20180727_163543.png" width="30" height="30"> Toiletries</td>
+					</tr>
+					<tr>
+						<td><img src="hotel1/20180727_163526.png" width="30" height="30"> Towels</td>
+						<td><img src="hotel1/20180729_131529.png" width="34" height="34"> Wake-up service</td>
+						<td><img src="hotel1/20180727_163733.png" width="30" height="30"> Whirlpool bathtub</td>
+					</tr>
+				</table>
+			</div>
+			<div class="image">
+				<h2>Image Gallery</h2>
+				<section>
+					<figure><img src="hotel2/FB_IMG_1533818949051.jpg" width="260" height="160"><br><center>Hotel Top View</center></figure>s
+					<figure><img src="hotel2/royal-jasmine-hotel(1).jpg" width="260" height="160"><br><center>In Front Hotel</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819132590.jpg" width="260" height="160"><br><center>Hotel Night View</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819139010.jpg" width="260" height="160"><br><center>Bacony / terrace</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819136462.jpg" width="260" height="160"><br><center>Hotel villboard</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533818987790.jpg" width="260" height="160"><br><center>Front Desk</center></figure>
+					<figure><img src="hotel2/e784601681e92cf6d162ca67481a346c6e5cb65f.jpg" width="260" height="160"><br><center>Front Desk</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533818999526.jpg" width="260" height="160"><br><center>Seating Area</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819193305.jpg" width="260" height="160"><br><center>Meeting Room</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819116921.jpg" width="260" height="160"><br><center>Meeting Room</center></figure>
+					<figure><img src="hotel2/c2b94599_z.jpg" width="260" height="160"><br><center>Room Bacony</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819004422.jpg" width="260" height="160"><br><center>Seating Area</center></figure>
+					<figure><img src="hotel2/royal-jasmine-hotel.jpg" width="260" height="160"><br><center>Restaurant</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819093892.jpg" width="260" height="160"><br><center>Cake Avialable</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819019797.jpg" width="260" height="160"><br><center>Dinning Area</center></figure>
+					<figure><img src="hotel2/FB_IMG_1533819038459.jpg" width="260" height="160"><br><center>Bathroom</center></figure>
+				</section>
+			</div>
+			<br style="clear:both;">
+			<div class="use">
+				<h2>Useful information <span>Resort Policies</span></h2>
+				<table>
+					<tr><td>Check-in from<span>12:00</span></td></tr>
+					<tr><td>Check-out until<span>12:00</span></td></tr>
+					<tr><td>Reception open util<span>00:00</span></td></tr>
+					<tr><td>Distance from city center<span>1.1 km</span></td></tr>
+					<tr><td>Number of bars / lounges<span>1</span></td></tr>
+					<tr><td>Number of floors<span>4</span></td></tr>
+					<tr><td>Number of restaurants<span>1</span></td></tr>
+					<tr><td>Number of rooms<span>49</span></td></tr>
+					<tr><td>Daily parking fee<span>0 USD</span></td></tr>
+					<tr><td>Year property opened<span>2014</span></td></tr>
+					<tr><td>Most recent renovation<span>2014</span></td></tr>
+				</table>
+				<div class="useful">
+					<h3>Infant 0-1 year</h3>
+					<p>Stay for free if using existing bedding. Note, if you need a cot there may be an extra charge.</p>
+					<br>
+					<h3>Children 2-5 year(s)</h3>
+					<p>Stay for free if using existing bedding. </p>
+					<p>Extra beds are dependent on the room you choose. Please check the individual room capacity for more details</p>
+					<p>When booking more than 5 rooms, different policies and additional supplements may apply.</p>
+				</div>
+			</div><br style="clear:both;"><br>
+			<footer>
+				<h2 style="float:left;" class="pre"><a href="hotel-kandawgyi hill resort.html"><img src="hotel1/20180813_164852.png" width="70" height="70"></a></h2>
+				<h2 style="float:right;" class="pre"><a href="hotel-win unity hotel.html"><img src="hotel1/20180813_164917.png" width="70" height="70"></a></h2>
+			</footer>
+	</div>
+	<div class="dog">
+		<h1>HOTEL </h1>
+	</div>
+</body>
+	<script type="text/javascript">
+		var index=1;
+		function nextIndex(n){
+			index=index+n;
+			showImage(index);
+		}
+		showImage(1)
+		function showImage(n){
+			var x=document.getElementsByClassName("slide");
+			if(n>x.length){index=1};
+			if(n<1){index=x.length};
+				for (var i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[index-1].style.display="block";
+
+
+			var k;
+			var y=document.getElementsByClassName("botton");
+			if(n>x.length){index=1};
+			if(n<1){index=x.length};
+				for ( k = 0; k <y.length; k++) {
+					y[k].style.display="none";
+				}
+				y[index-1].style.display="block";
+		}
+
+		function oneIndex(n){
+			index=n+1;
+			var x=document.getElementsByClassName("slide");
+				for (var i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[n].style.display="block";
+
+			var k;
+			var y=document.getElementsByClassName("botton");
+				for ( k = 0; k <y.length; k++) {
+					y[k].style.display="none";
+				}
+				y[n].style.display="block";
+		}
+	</script>
+	<script type="text/javascript">
+		var index=1;
+		function nextIndex2(n){
+			index=index+n;
+			showImage2(index);
+		}
+		showImage2(1)
+		function showImage2(n){
+			var x=document.getElementsByClassName("slide2");
+			if(n>x.length){index=1};
+			if(n<1){index=x.length};
+				for (var i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[index-1].style.display="block";
+
+
+			var k;
+			var y=document.getElementsByClassName("botton2");
+			if(n>x.length){index=1};
+			if(n<1){index=x.length};
+				for ( k = 0; k <y.length; k++) {
+					y[k].style.display="none";
+				}
+				y[index-1].style.display="block";
+		}
+
+		function twoIndex(n){
+			index=n+1;
+			var x=document.getElementsByClassName("slide2");
+				for (var i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[n].style.display="block";
+
+			var k;
+			var y=document.getElementsByClassName("botton2");
+				for ( k = 0; k <y.length; k++) {
+					y[k].style.display="none";
+				}
+				y[n].style.display="block";
+		}
+	</script>
+	<script type="text/javascript">
+		var index=1;
+		function nextIndex4(n){
+			index=index+n;
+			showImage4(index);
+		}
+		showImage4(1)
+		function showImage4(n){
+			var x=document.getElementsByClassName("slide4");
+			if(n>x.length){index=1};
+			if(n<1){index=x.length};
+				for (var i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[index-1].style.display="block";
+
+
+			var k;
+			var y=document.getElementsByClassName("botton4");
+			if(n>x.length){index=1};
+			if(n<1){index=x.length};
+				for ( k = 0; k <y.length; k++) {
+					y[k].style.display="none";
+				}
+				y[index-1].style.display="block";
+		}
+
+		function fourIndex(n){
+			index=n+1;
+			var x=document.getElementsByClassName("slide4");
+				for (var i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[n].style.display="block";
+
+			var k;
+			var y=document.getElementsByClassName("botton4");
+				for ( k = 0; k <y.length; k++) {
+					y[k].style.display="none";
+				}
+				y[n].style.display="block";
+		}
+	</script>
+
+
+
+
+
+
+	<script type="text/javascript">
+		toIndex(0)
+		function toIndex(n){
+			var i;
+			var x=document.getElementsByClassName("room1");
+				for ( i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[n].style.display="block";
+			var y=document.getElementsByClassName("btnn");
+				for ( i = 0; i <y.length; i++) {
+					y[i].style.color="#006650";
+					y[i].style.background="#fff";
+					y[i].style.border="2px solid #006650";
+				}
+			y[n].style.color="#fff";	
+			y[n].style.background="#006650";
+			y[n].style.border="2px solid #c7effa";	}
+	</script>
+	<script type="text/javascript">
+		tooIndex(0)
+		function tooIndex(n){
+			var i;
+			var x=document.getElementsByClassName("room2");
+				for ( i = 0; i <x.length; i++) {
+					x[i].style.display="none";
+				}
+				x[n].style.display="block";
+			var y=document.getElementsByClassName("btnnn");
+				for ( i = 0; i <y.length; i++) {
+					y[i].style.color="#006650";
+					y[i].style.background="#fff";
+					y[i].style.border="2px solid #006650";
+				}
+			y[n].style.color="#fff";	
+			y[n].style.background="#006650";
+			y[n].style.border="2px solid #c7effa";	}
+	</script>
+</html>

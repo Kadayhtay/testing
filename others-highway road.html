@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Highway Road</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background-color: #fff;}
+
+.mm {font-family: arial;
+background-color: #fff;}
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 6px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 170px;
+  position: relative;
+  top: 0px;
+  left: -180px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  color: #006650;
+  right: 94px;
+  top: 80px;}
+  .hw1 img{margin-left: 450px;
+  	padding-right: 10px;
+  	float: left;}
+.hw1 h1{text-decoration: underline;
+padding-top: 20px;
+font-weight: bold;
+color:#006650;
+font-size: 3em;}
+.hw2,.hw3{margin-left: 100px; 
+margin-right: 100px;
+	border:3px solid #006650;
+	color: #006650;
+	height: 430px;
+	width: 500px;
+	padding: 20px;
+}
+.hw2 img,.hw3 img{margin-bottom: 20px;
+	float:left;
+ margin-left: 100px;
+}
+.hw2 h1,.hw3 h1{
+padding-left: 20px;
+}
+.hw2 p,.hw3 p{text-indent: 50px;}
+.hw3{float:right;
+}
+.hw4{
+  margin-right: 30px;
+  padding-top: 30px;
+}
+.hw4 img {
+    float:right;
+    border: 1px solid #006650; 
+    border-radius: 4px; 
+    padding: 5px; 
+    width: 300px;
+    height:200px; 
+    margin-right:10px;
+}
+.hw4 img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.hw4 h3{
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 10px;
+  color:#006650;
+}
+hr.style5 {
+  background-color: #fff;
+  border-top: 2px dashed #006650;
+  margin-left: 15px;
+}
+.hw5{
+  margin-left: 150px;
+  width:78%;
+}
+fieldset{
+  border:4px solid #006650;
+  padding-bottom: 20px;
+}
+legend h1{color:#006650;}
+legend img{
+  float:left;
+  margin-top: 20px;
+}
+.hw5-1{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #006650;
+  color:#fff;
+  border:2px solid #006650;
+  border-radius: 10px;
+  height:120px;
+}
+.hw5-1 img{
+  float:right;
+  margin-bottom: 10px;
+  border: 2px ridge #CCBCCC;
+  transform:rotate(25deg);
+}
+.hw5-1 h3{
+  margin-left: 30px;
+}
+.hw5-1 h4{
+  margin-left: 650px;
+}
+.hw5-2 h4{
+  margin-left:700px;
+}
+.hw5-2{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #006650;
+  color:#fff;
+  border:2px solid #006650;
+  border-radius: 10px;
+  height:120px;
+}
+.hw5-2 img{
+  float:left;
+  margin-bottom: 10px;
+  border: 2px ridge #CCBCCC;
+  transform:rotate(-25deg);
+}
+.hw5-2 h3{
+  margin-left:200px;
+}
+.mm h4{
+  text-align: center;
+}
+hr.style2 {
+  border-top: 3px double #006650;
+}
+.hw5-1 img,.hw5-2 img{
+  width:150px;
+  height:100px;
+}
+hr.style13 {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #006650 inset;
+}
+.arrow{
+  background-color: #006650;
+}
+footer{width: 100%;
+  height: 80px;
+  background-color: #006650;}
+footer img{
+  margin: 5px 40px;}
+  .mm{
+    font-family: Arial;
+  }
+  p{
+    text-align: justify;
+    text-justify:inter-word;
+  }
+</style>
+<link rel="stylesheet" type="text/css" href="others/main2.css">
+</head>
+<body>
+  <div class="nnav">
+    <ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a style="font-weight:bold;" data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+    </ul>
+  </div>
+  <div class="mm" style="padding-top:50px;"> 
+    <div class="cat">
+      <span><h3>Other Links</h3></span>
+      <ul>
+        <li><h1>&#9776;</h1>
+          <ul>
+            <li><a href="others-chinese temple.html">Chinese Temple</a></li>
+            <li><a href="others-night market.html">Night Market</a></li>
+            <li><a href="others-cozy world.html">Cozy World</a></li>
+            <li><a style="font-weight:bold;text-decoration:underline;" href="others-highway road.html">Highway Road</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  <div class="hw1">
+  	<img src="others/VioletHighway.png" width="90" height="90"><h1>Highway Road</h1>
+  </div><br>
+  <div class="hw3">
+    <img src="others/20180826_213541.png" width="50" height="50" style="margin-left:140px; margin-top:10px; background-color:#006650;"><h1>&nbsp;Review</h1>
+    <img src="others/hwreview.jpg" width="300" height="200" style="padding-top:10px;"><br style="clear:left;">
+    <p>The Pyin Oo Lwin-Lashio part of Highway Road became popular since 2016 because of a smooth and straight part of road and conifer forests which are situated each side of road.Many travellers especailly local guests come there,take photos and then it becomes the one of popular places in Pyin Oo Lwin.The Mdy-Pol part of road is almost finished and will become popular too.
+    </p>
+  </div>
+  <div class="hw2">
+  	<img src="others/gd1.png" width="60" height="60" style="margin-left:140px; padding-right: 10px;"><h1 style="margin-top: 13px;">Direction</h1>
+  	<img src="others/highwaymap.jpg" width="300" height="200"><br style="clear:left;">
+  	<p>The strat point of this beautiful road is situated about 16 miles far from mandalay.And at 37 milestone of the Mandalay-Lashio Road from Mandalay, there is a junction. Turn right at there and go ahead. After driving about 7 miles, there is a wonderful road with conifer forests on both sides and it looks like a Western Country's Road.</p>
+  </div><br><br>
+  <div class="hw4">
+<a target="_blank" href="others/hw1.jpg">
+  <img src="others/hw1.jpg" alt="Road">
+</a>
+<a target="_blank" href="others/hw2.jpg">
+  <img src="others/hw2.jpg" alt="Road">
+</a>
+<a target="_blank" href="others/hw5.jpg">
+  <img src="others/hw5.jpg" alt="Road">
+</a>
+<a target="_blank" href="others/hw3.jpg">
+  <img src="others/hw3.jpg" alt="Road">
+</a><br style="clear:both">
+<center><h3>Place to get good photos</h3></center>
+</div>   
+ <hr class="style5">
+  <div class="hw5">
+    <fieldset>
+    <legend><img src="others/greenrecommend.png" height="80" width="80"><h1>Some Recommends</h1></legend>
+    <div class="hw5-1">
+      <a target="_blank" href="others/rec1.jpg">
+      <img src="others/rec1.jpg" alt="Road">
+      </a>
+      <h3>" With Drone Shoot, we had a more perfect and great moment at there. "</h3>
+      <h4>ITravelling</h4>
+    </div>
+    <div class="hw5-2">
+      <a target="_blank" href="others/rec2.jpg">
+      <img src="others/rec2.jpg" alt="Road">
+      </a>
+      <h3>" Oh! white mist and black road. How beautiful it is! "</h3>
+      <h4>Yamin Thu</h4>
+    </div>
+    <div class="hw5-1">
+      <a target="_blank" href="others/rec3.jpg">
+      <img src="others/rec3.jpg" alt="Road">
+      </a>
+      <h3>" As a rider,this is the best place in Myanmar to ride.I really like it. "</h3>
+      <h4>Ko Maung Kee</h4>
+    </div>
+    <div class="hw5-2">
+      <a target="_blank" href="others/rec4.jpg">
+      <img src="others/rec4.jpg" alt="Road">
+      </a>
+      <h3>" I took many beautiful photos here.I decided to come here again. "</h3>
+      <h4>Mi Thet Htar Swe</h4>
+    </div>
+    <div class="hw5-1">
+      <a target="_blank" href="others/rec5.jpg">
+      <img src="others/rec5.jpg" alt="Road">
+      </a>
+      <h3>" I often come here even i don't have free time because i really love to drive on it. "</h3>
+      <h4>Moe Khant</h4>
+    </div>
+  </fieldset>
+  </div><br>
+  <h4>Photos and Recommends Sources: <a href="https://www.facebook.com/"> Facebook</a></h4><br><hr class="style13">
+   <div class="container">
+        <div id="carousel">
+            <img src="others/hw10.jpg" alt="">
+            <img src="others/hw6.jpg" alt="">
+            <img src="others/hw7.jpg" alt="">
+            <img src="others/hw8.jpg" alt="">
+            <img src="others/hw9.jpg" alt="">
+        </div>
+    </div><br><br>
+    <center><h3>Mandalay - Pyin Oo Lwin part of Road</h3></center>
+<hr class="style2">
+    <footer>
+      <a href="others-cozy world.html"><img src="others/20180816_204908.png" width="70" height="70"></a>
+    </footer>
+  </div>
+  <div class="dog">
+    <h1>TOURISTY PLACES </h1>
+  </div>
+</body>
+</html>

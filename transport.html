@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Transport</title>
+<meta charest="utf-8">
+<link rel="stylesheet" href="nav.css">
+<style>
+body{background-color: #dff;}
+.dog{background-color: #006650;}
+.nnav{background-color: #006650;}
+.nnav ul li:hover{background-color: #fff;}
+.nnav ul li:hover a{color: #006650;}
+.nnav ul li:focus{background-color: #006650;}
+.nnav ul li a:before{color:#006650;}
+
+
+.cat ul li{background-color: #006650;
+  list-style: none;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 50px;
+  top: 90px;
+  border-radius: 4px;}
+.cat ul li :hover{cursor: pointer;}
+.cat ul li h1{color: #fff;
+  margin-top: -4px;
+  margin-left: 4px;}
+.cat ul li ul{position: absolute;
+  top: 35px;}
+.cat ul li ul li{display: none;
+  width: 190px;
+  position: relative;
+  top: 0px;
+  left: -200px;
+  padding: 10px 5px 0px 10px;
+  border: 1px solid #fff;}
+.cat ul li ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.cat ul li ul li:hover a{
+  text-decoration: underline;
+  width: 100%;
+  padding: 5px;
+  font-weight: bold;}
+.cat ul li:hover ul li{display: block;}
+.cat span{position:absolute;
+  right: 90px;
+  top: 80px;}
+.hh h1{font-family: arial;
+  padding-top: 70px;
+  text-decoration: underline;}
+table{margin: 50px;
+	color:#006650;
+}
+td{
+	
+	  border:1px solid #006650;
+  padding: 10px;
+  font-size: 1.3em;
+  
+	width: 4900px;
+	
+}
+th{font-size: 1.8em;
+  background-color: #006650;
+  color: white;
+	font-weight: bold;
+  border:1px solid #006650;
+}
+p{float:right;
+	margin: 200px 50px auto 200px;
+}
+header{margin: 60px auto auto auto;
+text-align: center;
+font-size: 1.8em;
+}
+.hh{margin: 50px;
+    }
+body{ 
+color:#006650;}
+#hc{font-size: 1.4em;
+	margin-left: 50px;
+  text-decoration: underline;
+  text-align: center;
+}
+.cb{width:300px;
+height: 50px;
+margin-left: 30px;
+padding-left: 30px;
+padding-top: 8px;
+color:white;
+background-color: #006650;
+font-size: 1.6em;
+border-radius: 10px;}
+.cb img{margin-bottom: -7px;}
+
+.fs{border: 3px solid #006650;
+	padding-top:20px;
+padding-bottom:20px;
+}
+tr:hover{background-color:#ccffff;}
+tr{border:1px solid #006650;}
+figure{
+    display:inline-block;
+    padding: 5px;
+    margin-left: 120px;
+     }
+figcaption{font-size: 1.2em;
+           padding-bottom: 10px;}
+.jm{padding: auto auto 50px auto ;
+float: right;
+}
+.sh{float: top;}
+.center{text-align: center;}
+footer{background-color: #006650;
+  color: #fff;
+  font-family: arial;
+  height: 350px;
+  padding: 50px 50px 30px 50px;}
+footer h3{font-family: arial;}
+.contact{width: 100%;}
+.member{float: left;
+  width: 40%;}
+.member h3{text-indent: 30px;
+  text-shadow: 3px 3px 3px #000;}
+.member a{color: #006650;
+  background-color: #fff;
+  margin-left: 20px;
+  padding: 3px;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #000;
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.member a:hover{background-color: #006650;
+  color: #dff;
+  border:1px solid #fff;
+  text-decoration: underline;}
+.member a:focus{background-color: #dff;}
+.member ol li{line-height: 28px;
+  list-style: none;}
+.email a{color: #fff;
+  text-decoration: none;}
+.email{line-height: 30px;
+  padding-top: 50px;
+  float: left;
+  width: 30%;}
+.email h3{text-shadow: 3px 3px 3px #000;}
+.email img{
+  transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -webkit-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);
+  -moz-transition:0.6s cubic-bezier(0.1,0.1,0.5,1.4);}
+.social img:hover{width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #000;}
+.inin{text-align: right;
+  padding-right: 90px;}
+.inin img{margin-top: 30px;
+  border: 1px double #dff;
+  box-shadow:2px 2px 2px #000;}
+.inin #fir{padding: 0px 60px;
+  background-color: #fff;}
+.inin img:hover{opacity: .85;}
+.hh figure{margin-left: 30px;
+  border: 2px solid #006650;
+  padding: 0px;
+  float: left;}
+.hh figure figcaption{text-align: center;}
+.hh p{margin-left: 600px;
+  margin-top: -200px;
+  line-height: 35px;}
+.hh #fifi{width: 5800px;}
+.urbannav table{
+  border-collapse: collapse;
+  width:60%;
+  background-color: #006650;
+}
+.urbannav table tr,.urbannav table td{
+  width: 50%;
+  height: 30px;
+}
+.urbannav th a{
+  color:#fff;
+  text-decoration: none;
+}
+.urbannav th{
+  width: 25%;
+}
+hr.style10 {
+  border-top: 1px dotted #006650;
+  border-bottom: 1px dotted #006650;
+}
+section{
+  padding-top: 50px;
+}
+.mm{
+  font-family: Arial;
+}
+</style>
+</head>
+<body>
+
+	<div class="nnav">
+		<ul>
+      <li><img src="home/home-5-xxl.png" width="18" height="18"><a data-text="Home" href="index.html">Home</a></li>
+      <li><img src="home/20180723_230056.png" width="18" height="18"><a data-text="Touristy Places" href="touristy places.html">Touristy Places</a></li>
+      <li><img src="home/local_hotel_white_192x192.png" width="20" height="20"><a data-text="Hotel" href="hotel.html">Hotel</a></li>
+      <li><img src="home/20180723_232110.png" width="20" height="20"><a data-text="Restaurant" href="restaurant.html">Restaurant</a></li>
+      <li><img src="home/20180723_232944.png" width="20" height="20"><a data-text="Shop" href="shop.html">Shop</a></li>
+      <li><img src="home/20180723_234740.png" width="20" height="20"><a data-text="General" href="general.html">General</a></li>
+      <li><img src="home/20180723_234106.png" width="22" height="22"><a style="font-weight:bold;" data-text="Transport" href="transport.html">Transport</a></li>
+      <li><img src="home/20180723_235430.png" width="22" height="22"><a data-text="Nearby Towns" href="nearby towns.html">Nearby Towns</a></li>
+      <li><img src="home/20180808_093352.png" width="20" height="20"><a data-text="Time To Visit" href="time to visit.html">Time To Visit</a></li>
+      <li><img src="home/20180724_000459.png" width="20" height="20"><a data-text="About Us" href="about us.html">About Us</a></li>
+		</ul>
+	</div>
+	
+	<div class="mm">
+		<div class="hh">
+			<center><header><h1><img style=" background-color:#006650;margin-bottom:-10px;margin-right:10px;" src="Transport/20180824_085923.png" width="80" height="80">Transport</h1></header></center>
+      <div class="urbannav">
+      <center>
+        <table>
+          <tr>
+            <th><a href="#car"</a>Express</th>
+            <th style="border-left: 3px solid #fff;"><a href="#air">Airlines</a></th>
+            <th style="border-left: 3px solid #fff;"><a href="#train">Train</a></th>
+          </tr>
+        </table>
+      </center>
+    </div><hr class="style10" style="margin-top: 30px;"><br>
+    <section id="car">
+			<h2 class="cb"><img src="Transport/bus128.png" class="kh" height="30" width="30" style="padding-right: 20px;">Buses</h2>
+        <figure style="margin-left:180px;">
+          <img src="Transport/car.jpg" width="900" height="500">
+          <figcaption>Thiri Padaythar Highway Bus Station<figcaption>
+        </figure>
+        <br clear="both">
+			<h3 id="hc"></h3>
+			<center>
+				<table>
+					<tr>
+						<th id="fifi">Bus Name</th>
+            <th>Destination</th>
+            <th>Phone Number</th>
+					</tr>
+          <tr>
+            <td id="fifi"><img src="Transport/mandalarmin.jpg" width="200" height="80"><div class="jm">Mandalar Min</div></td>
+             <td><center>Pyin Oo Lwin ~ Yangon</center></td>
+            <td><div class="sh">
+              Pyin Oo Lwin : 09-43133533<br>
+              Yangon : 09-73109000<br>
+            </td>
+           
+          </tr>
+          <tr>
+            <td id="fifi"><img src="Transport/shwepyi.png" width="200" height="80"><div class="jm">Zayar Shwe Pyi</div></td>
+            <td><center>Pyin Oo Lwin ~ Yangon</center></td>
+            <td>
+              Pyin Oo Lwin : 09-445266626<br>
+              Yangon : 09-797734633<br>
+              </td>
+					</tr>
+					<tr>
+            <td id="fifi"><img src="Transport/myatmandalar.jpg" width="200" height="80"><div class="jm">Myat Mandalar Tun</div></td>
+            <td><center>Pyin Oo Lwin ~ Yangon</center></td>
+            <td>
+              Pyin Oo Lwin : 09-2050917<br>
+              Yangon : 09-2050919<br>
+            </td>
+					</tr>
+					 <tr>
+                      <td id="fifi"><img src="Transport/elite.jpg" width="200" height="80"><div class="jm">Elite</div></td>
+                    	<td><center>Pyin Oo Lwin ~ Yangon</center></td>
+                    	<td>
+                    		Pyin Oo Lwin : 09-977838180<br>
+                    		Yangon : 09-73223223<br>
+                    	</td>
+					</tr>
+                    <tr>
+                      <td id="fifi"><img src="Transport/nm.jpg" width="200" height="80"><div class="jm">New Mandalar Tun</div></td>
+                    	<td><center>Pyin Oo Lwin ~ Taunggyi</center></td>
+                    	<td>
+                    		Pyin Oo Lwin : 09-967626709<br>
+                    		Taunggyi : 09-967626708<br>
+                    	</td>
+					</tr>
+					 <tr>
+                      <td id="fifi"><img src="Transport/st.jpg" width="200" height="80"><div class="jm">Shan Thitsar</div></td>
+                    	<td><center>Pyin Oo Lwin ~ Taunggyi</center></td>
+                    	<td>
+                    		Pyin Oo Lwin : 09-250630245<br>
+                    		Taunggyi : 09-428323344<br>
+                    	</td>
+					</tr>
+					 <tr>
+                      <td id="fifi"><img src="Transport/mandalarmin.jpg" width="200" height="80"><div class="jm">Mandalar Min</div></td>
+                    	<td><center>Pyin Oo Lwin ~ Taunggyi</center></td>
+                    	<td>
+                    		Pyin Oo Lwin : 09-43133533<br>
+                    		Taunggyi : 09-424336050<br>
+                    	</td>
+					</tr>
+                    <tr>
+                      <td id="fifi"><img src="Transport/sm.jpg" width="200" height="80"><div class="jm">Shwe Mann May</div></td>
+                      <td><center>Pyin Oo Lwin~Mandalay~Lashio</center></td>
+                    	<td>
+                    		 085-21484, 09-777706956<br>
+                    		 02-73052, 09-777706946<br>
+                    	</td>
+					</tr>
+					 <tr>
+                       <td id="fifi"><img src="Transport/sa.jpg" width="200" height="80"><div class="jm">Soe Moe Aung</div></td>
+                    	<td><center>Pyin Oo Lwin ~ Mandalay</center></td>
+                    	<td>
+                    		09-449912242
+                    	</td>
+					</tr>
+				</table>
+			</center></section><br><br>
+      <section id="air">
+		<h2 class="cb"><img src="Transport/airplane.png" class="kh" height="30" width="30" style="padding-right: 20px;" >Airlines</h2>	
+        <figure style="margin-left:180px;">
+          <img src="Transport/airport.jpg" width="900" height="500">
+          <figcaption>Mandalay International Airport<figcaption>
+        </figure><br clear="both">
+		<center>
+				<table>
+					<tr>
+						<th>Airlines</th>
+						<th>Address</th>
+					</tr>
+          <tr>
+                       <td><img src="Transport/mannyadanarpon.jpeg" width="200" height="80"><div class="jm">Mann Yadanarpon Airlines</div></td>
+                    	<td><center>
+                    		Hot Line : (+95-1)656969<br>
+                    		Email : <a href="mailto:info@airmyp.com">info@airmyp.com</a><br>
+                    		Website : <a href="http://www.airmyp.com">www.airmyp.com</a><br></center>
+                    	</td>
+					</tr>
+					 <tr>
+            <td><img src="Transport/goldenmyanmar.png" width="200" height="80"><div class="jm">Golden Myanmar Airlines</div></td>
+                    	<td><center>
+                    		Hot Line : +959-400448999, +959-400446999<br>
+                    		Email : <a href="mailto:customerservices@gmairlines.com">customerservices@gmairlines.com</a><br></center>
+                    	</td>
+					</tr>
+					 <tr>
+                       <td><img src="Transport/myanmar.jpg"  width="200" height="80"><div class="jm">Myanmar National Airliness</div></td>
+                    	<td><center>
+                    		Phone : +951378603, +951377840<br>
+                    		Email : <a href="mailto:contactus@flymna.com">contactus@flymna.com</a><br></center>
+                    	</td>
+					</tr>
+					<tr>
+                      <td><img src="Transport/airkbz.jpg"  width="200" height="80"><div class="jm">Air KBZ</div></td>
+                    	<td><center>
+                    		Hot Line : +95(01)9670007<br>
+                    		Email : <a href="mailto:info@airkbz.com.mm">info@airkbz.com.mm</a><br>
+                    		Website : <a href="http://www.airkbz.com">www.airkbz.com</a><br></center>
+                    	</td>
+					</tr>
+				</table>
+			</center></section><br><br>
+      <section id="train">
+      <h2 class="cb"><img src="Transport/train2.png" class="kh" height="30" width="30" style="padding-right: 20px;">Train</h2>
+        <figure style="margin-left:180px;">
+          <img id="kh" src="Transport/station.jpg" width="900" height="500">
+          <figcaption>Pyin Oo Lwin Station<figcaption>
+        </figure>
+        <br clear="both">
+       <center>
+        <h3 id="hc">MANDALAY - LASHIO<br>
+        131 UP, 132 DOWN TRAIN<br>
+        TRAIN TIME TABLE<table></table></h3>
+      </center>
+      <center>
+        <table class="center">
+          <tr>
+            <th>131 UP</th>
+            <th>STATION</th>
+            <th>131 DOWN</th>
+          </tr>
+          <tr>
+            <td>19:05</td>
+            <td>LASHIO</td>
+            <td>5:00</td>
+          </tr>
+           <tr>
+            <td>14:48<br>
+                14:38</td>
+            <td>HSIPAW</td>
+            <td>9:20<br>
+                9:30</td>
+          </tr>
+           <tr>
+            <td>13:22<br>
+                13:07</td>
+            <td>KYAUKME</td>
+            <td>10:55<br>
+                11:10</td>
+          </tr>
+          <tr>
+            <td>08:22<br>
+                07:52</td>
+            <td>PYIN OO LWIN</td>
+            <td>15:55<br>
+                16:40</td>
+          </tr>
+           <tr>
+            <td>
+                04:00</td>
+            <td>MANDALAY</td>
+            <td>21:15</td>
+          </tr>
+        </table>
+      </center></section><br><br>
+		</div>
+    <footer>
+      <div class="contact">
+        <div class="member">
+          <h3>&#9733; &star; Member List &star; &#9733;</h3>
+          <ol>  
+            <li>&#10102;. Mg Minn Thant Tin </li>
+            <li>&#10103;. Mg Ye Win Htet </li>
+            <li>&#10104;. Ma Shweyi Lin Lat </li>
+            <li>&#10105;. Mg Pyae Zin Phyo </li>
+            <li>&#10106;. Ma Win Chan Thar Bo</li>
+            <li>&#10107;. Ma Theint Nay Chi Hlaing</li>
+            <li>&#10108;. Mg Zaw Win Htet</li>
+            <li>&#10109;. Mg Har Kee</li>
+          </ol>
+          <a href="about us.html">More About</a>
+          <a href="about us.html#here">Contact Here</a>
+        </div>
+        <div class="email">
+          <img src="home/20180719_120727.png" width="30" height="30">
+          <a href="">yewinhtet04@gmail.com</a><br>
+          <img src="home/20180719_121454.png" width="25" height="25">
+          (+95) 978448996<br>
+          <img src="home/1532182178859.png" width="25" height="25">
+          UTYCC, Mandalay-Lashio Road,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mandalay Region, Myanmar<br>
+          <h3>Community </h3>
+            <div class="social">
+              <a href=""><img src="home/facebook+logo+png+transparent+background.png" width="40" height="40"></a>
+              <a href=""><img src="home/instagram-Logo-PNG-Transparent-Background-download.png" width="40" height="40"></a>
+              <a href=""><img src="home/twitter-logo.png" width="38" height="38"></a>
+              <a href=""><img src="home/1532182638185.png" width="43" height="43"></a>
+            </div>
+        </div>
+        <div class="inin">
+          <img id="fir" src="home/FB_IMG_1483373206711.jpg" width="120" height="120"><br>
+          <img src="home/travel_v5.gif" width="240" height="120">
+        </div>
+      </div>
+      <br>
+      <div>
+        <hr style="color:#fff;">
+      <center style="font-family:Time New Roman;"><i><small>Copyright &copy; UTYCC 2018. All Rights Reserved</small></i></center>
+      </div>
+    </footer>
+	</div>
+    <div class="dog">
+		<h1>TRANSPORT</h1>
+	 </div>
+</body>
+</html>
