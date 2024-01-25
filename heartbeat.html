@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<htnl lang="en">
+
+    <head>
+        <title>heart beat</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable">
+        <meta name="viewport" content="width=devicewidth">
+        <style>
+            body {
+                background-color: aliceblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .heart {
+                font-size: 10rem;
+                animation: heart .5s infinite alternate linear;
+            }
+
+            @keyframes heart {
+                from {
+                    transform: scale(.7);
+                }
+
+                to {
+                    transform: scale(1);
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>It belongs to you.</h1>
+        <div class="heart">❤️</div>
+    </body>
+</htnl>
