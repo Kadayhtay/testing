@@ -1,5 +1,5 @@
 const countdown = () => {
-    const birthdayDate = new Date("2024-11-1");
+    const birthdayDate = new Date("2024-11-10");
     const now = new Date();
     const timeDiff = birthdayDate - now;
 
@@ -16,6 +16,7 @@ const countdown = () => {
     } else {
         // Hide the countdown and show the clickable link
         document.getElementById("countdown").style.display = "none";
+        document.getElementById("birthday").style.display = "block";
         document.getElementById("birthdayLink").style.display = "block";
         document.getElementById("birthdayPresent").style.display = "block";
     }
