@@ -1,7 +1,9 @@
 const countdown = () => {
-    const birthdayDate = new Date("2024-11-10");
+    const birthdayDate = new Date(Date.UTC(2024, 10, 10, 0, 0, 0)); // 2024-11-10 at 00:00 UTC
+
+    // Get the current date and time in UTC
     const now = new Date();
-    const timeDiff = birthdayDate - now;
+    const timeDiff = birthdayDate.getTime() - now.getTime() + (now.getTimezoneOffset() * 60000);
 
     if (timeDiff > 0) {
         const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
